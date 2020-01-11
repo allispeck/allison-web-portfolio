@@ -1,0 +1,23 @@
+$primary : #9b1390;
+$secondary : #1c645e;
+$white : #ffffff;
+
+.hlb {
+  background-color : $primary;
+  color            : $white;
+  border-radius    : 0.5rem;
+  padding          : 1rem;
+  box-shadow       : 0 8px 15px rgba(0, 0, 0, 0.1);
+  font-size        : 4rem;
+  font-family      : 'Handlee', cursive;
+  cursor           : pointer;
+  transition       : background-color .5s;
+
+  &:hover {
+    transform : translateY(3px);
+    background-color: darken($primary, 5%);
+  }
+}
+
+
+
