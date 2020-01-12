@@ -5,11 +5,394 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="MDB-Free_4.11.0/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="MDB-Free_4.11.0/css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="MDB-Free_4.11.0/css/style.css">
+
+
+    <!--fonts-->
     <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
+
+
+    <!--default css-->
     <link rel="stylesheet" href="style.css">
-    <title>Sass Btn Test</title>
+
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_io/site.webmanifest">
+
+
+    <title>Allison Speck - Web Services</title>
 </head>
 <body>
-<button class="hlb">Happy Lil Button</button>
+
+<header>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/asLogo.png" class="LogoBackground" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="home" class="header-hero bg_cover" style="background-image: url(assets/images/banner-bg.svg)">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="header-hero-content text-center text-dark">
+                        <h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                            Hello!</h3>
+                        <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">Welcome to
+                            my website</h2>
+                        <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">Here I have details
+                            about projects I've worked on, and technologies I've had exposure to. Take a look around,
+                            and please reach out if you have any questions at all. I look forward to meeting you!</p>
+                        <!--<a href="#" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Let's-->
+                        <!--Go</a>-->
+                        <!--Linked in badge-->
+                        <!--<div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US"-->
+                        <!--data-type="horizontal" data-theme="dark" data-vanity="allison-speck"><a-->
+                        <!--class="LI-simple-link"-->
+                        <!--href='https://ca.linkedin.com/in/allison-speck?trk=profile-badge'>Allison Speck ☑</a>-->
+                        <!--</div>-->
+                    </div> <!-- header hero content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+        <div id="particles-1" class="particles"></div>
+    </div> <!-- header hero -->
+</header>
+<section class="company-heading intro-type" id="parallax-one">
+    <div class="container">
+        <div class="row product-title-info">
+            <div class="col-md-12">
+                <h1>DATA. DATA. DATA.</h1>
+                <a class="ct-btn-scroll ct-js-btn-scroll" href="#section2"><img alt="Arrow Down Icon"
+                                                                                src="https://www.solodev.com/assets/anchor/arrow-down.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="parallax" id="parallax-cta"
+         style="background-image:url(https://www.solodev.com/assets/anchor/company-hero2.jpg);"></div>
+</section>
+<div class="main">
+    <section id="section2">
+        <div class="container jumbo">
+            <div class="jumbotron">
+                <h2>Let Big Data Change the Game</h2>
+                <p>WebCorpCo is all about making sure your marketing stack is in alignment with your company as well as
+                    the customers you serve. There is no 'one size fits all' approach to marketing. Every business is
+                    unique, customers are unique, and your marketing should be as well.</p>
+                <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+            </div>
+        </div>
+    </section>
+</div>
+<!--projects-->
+<div class="container my-4">
+
+    <p class="font-weight-bold">Bootstrap carousel multiple items is an improved version of the standard bootstrap
+        carousel which allows you to put inside more than one element.</p>
+
+    <p><strong>Detailed documentation and more examples of Bootstrap grid you can find in our <a
+            href="https://mdbootstrap.com/docs/jquery/javascript/carousel/"
+            target="_blank">Bootstrap Carousel Docs</a>.</p>
+
+    <hr class="my-4">
+
+    <!--Carousel Wrapper-->
+    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+        <!--Controls-->
+        <div class="controls-top">
+            <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+            <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+        </div>
+        <!--/.Controls-->
+
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+            <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+            <li data-target="#multi-item-example" data-slide-to="1"></li>
+            <li data-target="#multi-item-example" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+
+            <!--First slide-->
+            <div class="carousel-item active">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.First slide-->
+
+            <!--Second slide-->
+            <div class="carousel-item">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Second slide-->
+
+            <!--Third slide-->
+            <div class="carousel-item">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Third slide-->
+
+        </div>
+        <!--/.Slides-->
+
+    </div>
+    <!--/.Carousel Wrapper-->
+
+
+</div>
+
+
+<!--footer x-->
+<footer class="">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-4 text-center text-md-left ">
+
+                <div class="py-0">
+                    <h3 class="my-4">Reach<span class="mx-2 font-italic text-white ">Out</span></h3>
+
+                    <p class="footer-links font-weight-bold">
+                        <a class="text-white" href="#">About</a>
+                        |
+                        <a class="text-white" href="#">Projects</a>
+                        |
+                        <a class="text-white" href="#">Resume</a>
+                        |
+                        <a class="text-white" href="#">Contact Me</a>
+                    </p>
+                    <p class=" py-4 mb-4">&copy;2020 Allison Speck Web Services.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 text-center text-md-left ">
+                <div class="py-2 my-4">
+                    <div>
+                        <p class=""><i class="fa fa-map-marker mx-2 text-white"></i>
+                            London, ON, Canada</p>
+                    </div>
+
+                    <div>
+                        <p><i class="fa fa-phone  mx-2 text-white"></i>(519) 702-4332</p>
+                    </div>
+                    <div>
+                        <p><i class="fa fa-envelope  mx-2 text-white"></i><a
+                                href="mailto:allisonmspeck@gmail.com">allisonmspeck@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 my-4 text-center text-md-left ">
+                <span class=" font-weight-bold text-white">About Me</span>
+                <p class=" my-2">Does your small business need a face lift? I'm here to help. Highly efficient, and low
+                    cost. I'm willing to work with you to identify where you see your web presence going, and how I can
+                    help you get there. </p>
+                <div class="py-2">
+                    <a href="#"><i class="fab fa-facebook fa-2x text-primary mx-3"></i></a>
+                    <a href="#"><i class="fab fa-google-plus fa-2x text-danger mx-3"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-2x text-info mx-3"></i></a>
+                    <a href="#"><i class="fab fa-youtube fa-2x text-danger mx-3"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--end of footer-->
+
+<!--default js-->
+<script type="text/javascript" src="app.js"></script>
+
+<!-- jQuery -->
+<script type="text/javascript" src="MDB-Free_4.11.0/js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="MDB-Free_4.11.0/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="MDB-Free_4.11.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="MDB-Free_4.11.0/js/mdb.min.js"></script>
+<!-- Your custom scripts (optional) -->
+<script type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="scroll-down.js"></script>
 </body>
 </html>
