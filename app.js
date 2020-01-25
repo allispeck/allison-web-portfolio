@@ -2,22 +2,22 @@
 
 //form js
 
-$(document).ready(function(){
-    $('.flip').click(function(){
-        $('.cont-flip').toggleClass('flipped');
-        return false;
-    });
-
-    $('.contact-form').submit(function (e) {
-        e.preventDefault();
-        $('.cont-flip').toggleClass('flipped');
-
-        $('#submitBtn').text('Thank you!');
-
-        setTimeout(location.reload.bind(location), 2000);
-    })
-
-});
+// $(document).ready(function(){
+//     $('.flip').click(function(){
+//         $('.cont-flip').toggleClass('flipped');
+//         return false;
+//     });
+//
+//     $('.contact-form').submit(function (e) {
+//         e.preventDefault();
+//         $('.cont-flip').toggleClass('flipped');
+//
+//         $('#submitBtn').text('Thank you!');
+//
+//         setTimeout(location.reload.bind(location), 2000);
+//     })
+//
+// });
 
 // smooth scroll
 
