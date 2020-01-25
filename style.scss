@@ -2,14 +2,21 @@
 @import "~bootstrap/scss/bootstrap";
 
 //color scheme
-$primary : #60495A;
-$secondary : #1c645e;
-$white : #ffffff;
+$primary : #084887;
+$secondary : #E28413;
+$white : #FBF5F3;
+
+$dark-orange : #F9AB55;
+$green : #084887;
+$orange : #F9AB55;
+$light-green : #B8D5B8;
+$tan : #D7B49E;
+$light-purple : #909CC2;
 
 $dark : #2D2327;
 $dark-purple : #45364B;
 $purple : #62466B;
-$light-purple : #8C93A8;
+
 $light-green : #B5C2B7;
 
 .LogoBackground {
@@ -20,23 +27,11 @@ $light-green : #B5C2B7;
   outline         : none;
 }
 
-//nav {
-//  background-color : $light-green;
-//  a {
-//    color : $primary;
-//
-//    &:hover {
-//      color : $dark;
-//    }
-//  }
-
 .nav-item {
-  color      : $dark;
   transition : all .2s ease-in-out;
 
   &:hover {
     transform : scale(1.5);
-    color     : $dark;
   }
 }
 
@@ -52,11 +47,21 @@ body {
   font-family : 'Open Sans Condensed', sans-serif;
 }
 
-/*===== NAVBAR =====*/
-nav{
-  background-color: $light-green;
+header {
+  height : 8rem;
 }
 
+.connect {
+  background-color : $green;
+  &:hover {
+    color : $orange;
+  }
+}
+
+/*===== NAVBAR =====*/
+nav {
+  background-color : $light-green;
+}
 
 .navbar-toggler.active .toggler-icon:nth-of-type(1) {
   -webkit-transform : rotate(45deg);
@@ -82,11 +87,10 @@ nav{
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
   .navbar-collapse {
-    position           : absolute;
+    //position           : absolute;
     top                : 100%;
     left               : 0;
     width              : 100%;
-    background-color   : #fff;
     z-index            : 9;
     -webkit-box-shadow : 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow    : 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
@@ -97,11 +101,10 @@ nav{
 
 @media (max-width : 767px) {
   .navbar-collapse {
-    position           : absolute;
+    //position           : absolute;
     top                : 100%;
     left               : 0;
     width              : 100%;
-    //background-color   : #fff;
     z-index            : 9;
     -webkit-box-shadow : 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow    : 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
@@ -112,7 +115,6 @@ nav{
 
 .navbar-nav .nav-item {
   margin-right : 45px;
-  position     : relative;
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
@@ -135,7 +137,7 @@ nav{
 
 .navbar-nav .nav-item a {
   font-weight        : 400;
-  color              : $dark;
+  color              : $white;
   -webkit-transition : all 0.3s ease-out 0s;
   -moz-transition    : all 0.3s ease-out 0s;
   -ms-transition     : all 0.3s ease-out 0s;
@@ -143,10 +145,10 @@ nav{
   transition         : all 0.3s ease-out 0s;
   padding            : 10px 0;
   position           : relative;
-  font-size: 1.4rem;
+  font-size          : 1.4rem;
 
   &:hover {
-    color           : $light-purple;
+    color           : $dark;
     text-decoration : none;
   }
 }
@@ -330,17 +332,15 @@ nav{
   }
 }
 
-.sticky .navbar-toggler .toggler-icon {
-  background-color : #2E2E2E;
-}
-
-.sticky .navbar-nav .nav-item a {
-  //color : #2E2E2E;
-}
-
-.sticky .navbar-nav .nav-item.active > a, .sticky .navbar-nav .nav-item:hover > a {
-  color : #361CC1;
-}
+//.fixed-nav-bar {
+//  position: fixed;
+//  //top: 0;
+//  //left: 0;
+//  //z-index: 9999;
+//  width: 100%;
+//  //height: 50px;
+//  //background-color: #00a087;
+//}
 
 /*===== HEADER HERO =====*/
 .header-hero {
@@ -520,64 +520,411 @@ nav{
   background-position : right center;
 }
 
-
 //arrow anchor
 .separator-type, .title-type, .intro-type, .content-type .intro-type p {
-  position: relative;
+  position : relative;
 }
+
 .intro-type .container {
-  padding: 107px 0px 102px 0px !important;
+  padding : 107px 0px 102px 0px !important;
 }
+
 .company-heading h1 {
-  margin-bottom: 60px;
-  padding-bottom: 50px;
-  line-height: 80px;
-  color: #fff;
-  font-weight: 700 !important;
-  text-align: center;
+  margin-bottom  : 60px;
+  padding-bottom : 50px;
+  line-height    : 80px;
+  color          : #fff;
+  font-weight    : 700 !important;
+  text-align     : center;
 }
+
 .jumbo {
-  margin-top: 50px;
+  margin-top : 50px;
 }
+
 .seo-header, .product-header,
 .intro-type .container h1.white,
 .company-heading h1 {
-  font-weight: 100 !important;
-  text-transform: capitalize;
-  font-size: 55px;
-  margin-bottom: 20px;
+  font-weight    : 100 !important;
+  text-transform : capitalize;
+  font-size      : 55px;
+  margin-bottom  : 20px;
 }
+
 .parallax {
-  background-attachment: inherit !important;
+  background-attachment : inherit !important;
 }
+
 .parallax {
-  background-attachment: inherit !important;
+  background-attachment : inherit !important;
 }
+
 .parallax {
-  background-attachment: inherit !important;
-  background-repeat: repeat;
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  width: 100%;
-  z-index: -10;
+  background-attachment : inherit !important;
+  background-repeat     : repeat;
+  background-size       : cover;
+  position              : absolute;
+  top                   : 0px;
+  bottom                : 0px;
+  width                 : 100%;
+  z-index               : -10;
 }
+
+#parallax-one {
+  background-color : $dark-orange;
+}
+
+#parallax-two {
+  background-color : $light-purple;
+}
+
+#parallax-three {
+  background-color : black;
+}
+
 .ct-btn-scroll {
-  width: 49px;
-  height: 49px;
-  position: absolute;
-  bottom: 30px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  padding-top: 500px;
-  z-index: 9;
-  border-radius: 50%;
-  -webkit-transition: background-color 0.25s ease-in-out;
-  transition: background-color 0.25s ease-in-out;
+  width              : 49px;
+  height             : 49px;
+  position           : absolute;
+  bottom             : 30px;
+  left               : 0;
+  right              : 0;
+  margin             : auto;
+  padding-top        : 500px;
+  z-index            : 9;
+  border-radius      : 50%;
+  -webkit-transition : background-color 0.25s ease-in-out;
+  transition         : background-color 0.25s ease-in-out;
 }
+
 img,
 figure {
-  max-width: 100%;
+  max-width : 100%;
 }
+
+.header-hero-content {
+  padding-top    : 10%;
+  padding-bottom : 10%;
+}
+
+.pic {
+  width         : 20rem;
+  height        : auto;
+  margin-right  : -2rem;
+  margin-bottom : -65px;
+}
+
+.jumbotron {
+  overflow : hidden;
+}
+
+[aos="fade"] {
+  opacity             : 0;
+  transition-property : opacity;
+}
+
+[aos="fade"].aos-animate {
+  opacity : 1;
+}
+
+.btn-primary {
+  background-color : $primary !important;
+  border-color     : $primary;
+}
+
+.btn-primary:hover {
+  color            : #fff;
+  background-color : $primary;
+  border-color     : #fff;
+}
+
+a {
+  color : #60495A;
+}
+
+.animated {
+  -webkit-animation-duration  : 1s;
+  animation-duration          : 1s;
+  -webkit-animation-fill-mode : both;
+  animation-fill-mode         : both
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity           : 0;
+    -webkit-transform : translateX(-200px);
+    transform         : translateX(-200px)
+  }
+  100% {
+    opacity           : 1;
+    -webkit-transform : translateX(0);
+    transform         : translateX(0)
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity           : 0;
+    -webkit-transform : translateX(-200px);
+    -ms-transform     : translateX(-200px);
+    transform         : translateX(-200px)
+  }
+  100% {
+    opacity           : 1;
+    -webkit-transform : translateX(0);
+    -ms-transform     : translateX(0);
+    transform         : translateX(0)
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name : fadeInLeft;
+  animation-name         : fadeInLeft
+}
+
+.bing {
+  height : 224px;
+}
+
+.card-body {
+  padding : 2.25rem;
+}
+
+//contact form
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+$white : #fff;
+
+body {
+  background-color : #f6ede5;
+}
+
+a, p {
+  font-family : 'Raleway', sans-serif;
+}
+
+@mixin perspective($pixels) {
+  -webkit-perspective : $pixels;
+  -moz-perspective    : $pixels;
+  -o-perspective      : $pixels;
+  perspective         : $pixels;
+}
+
+@mixin transition($speed) {
+  -webkit-transition : -webkit-transform $speed;
+  -moz-transition    : -moz-transform $speed;
+  -o-transition      : -o-transform $speed;
+  transition         : transform $speed;
+}
+
+@mixin transform-style() {
+  -webkit-transform-style : preserve-3d;
+  -moz-transform-style    : preserve-3d;
+  -o-transform-style      : preserve-3d;
+  transform-style         : preserve-3d;
+}
+
+@mixin transform($degrees) {
+  -webkit-transform : rotateX($degrees + deg);
+  -moz-transform    : rotateX($degrees + deg);
+  -o-transform      : rotateX($degrees + deg);
+  transform         : rotateX($degrees + deg);
+}
+
+@mixin backface-visibility() {
+  -webkit-backface-visibility : hidden;
+  -moz-backface-visibility    : hidden;
+  -o-backface-visibility      : hidden;
+  backface-visibility         : hidden;
+}
+
+.cont-contactInfo {
+  float         : left;
+  padding-right : 5%;
+  width         : 45%;
+
+  h3 {
+    font-size : 28px;
+  }
+
+  h4 {
+    font-size      : 22px;
+    font-weight    : normal;
+    text-transform : uppercase;
+  }
+
+  h4.section {
+    margin : 30px 0 0;
+  }
+
+  p {
+    margin : 0;
+  }
+
+  p > a {
+    text-transform : uppercase;
+    font-weight    : bold;
+  }
+
+  .social-icons {
+    list-style : none;
+    margin     : 5px 0 0;
+    padding    : 0;
+
+    li {
+      float        : left;
+      margin-right : 3px;
+
+      a {
+        //background-image  : url("../images/sprite_social_icons.png");
+        background-repeat : no-repeat;
+        display           : block;
+        height            : 28px;
+        width             : 29px;
+      }
+
+      a:hover {
+        opacity : .8;
+      }
+
+      a.icon_twitter {
+        background-position : -33px 0;
+      }
+
+      a.icon_linkedin {
+        background-position : -68px 0;
+      }
+
+      a.icon_youtube {
+        background-position : -102px 0;
+      }
+
+      a.icon_pinterest {
+        background-position : -135px 0;
+      }
+
+      a.icon_vimeo {
+        background-position : -169px 0;
+      }
+
+      a.icon_instagram {
+        background-position : -204px 0;
+      }
+    }
+  }
+}
+
+.cont-contactBtn {
+  height   : 359px;
+  margin   : 0 auto;
+  width    : 574px;
+  position : relative;
+
+  @include perspective(800px);
+
+  .cont-flip {
+    position : absolute;
+    @include transition(.5s);
+    @include transform-style();
+    height   : 100%;
+    width    : 100%;
+
+    .front, .back {
+      display  : block;
+      margin   : 0;
+      height   : 100%;
+      width    : 100%;
+      position : absolute;
+
+      @include backface-visibility;
+    }
+
+    .front {
+      background-color : $green;
+    }
+
+    .back {
+      background-color : $white;
+      @include transform(180);
+    }
+  }
+
+  .btn {
+    margin-top : 155px;
+  }
+
+  .cont-flip.flipped {
+    @include transform(180);
+  }
+
+  .contact-form {
+    margin-top   : 50px;
+    margin-right : auto;
+    margin-left  : auto;
+    width        : 80%;
+
+    input, textarea {
+      border         : 1px solid #808080;
+      font-size      : 12px;
+      padding        : 10px 0;
+      text-transform : uppercase;
+    }
+
+    input[type="text"] {
+      float         : left;
+      margin-bottom : 8px;
+      padding-left  : 3%;
+      width         : 46.6%;
+    }
+
+    .gutter {
+      margin-right : 2.8%;
+    }
+
+    textarea {
+      height        : 106px;
+      padding-left  : 3%;
+      margin-bottom : 22px;
+      width         : 96.2%;
+    }
+
+    input[type="submit"] {
+      background-color : $green;
+      border           : none;
+      color            : $white;
+      height           : 45px;
+      font-size        : 1rem;
+      width            : 100%;
+      max-width        : 93px;
+      text-align       : center;
+    }
+
+  }
+
+  .close {
+    display    : block;
+    height     : 19px;
+    width      : 19px;
+    background : url('https://i.imgur.com/WoKg12q.png') no-repeat center;
+    position   : absolute;
+    top        : 15px;
+    right      : 3%;
+  }
+}
+
+.btn {
+  border          : 3px $white solid;
+  color           : $white;
+  display         : block;
+  font-size       : 15px;
+  font-weight     : normal;
+  margin          : 0 auto;
+  max-width       : 280px;
+  padding         : 15px 0;
+  text-align      : center;
+  text-transform  : uppercase;
+  text-decoration : none;
+  width           : 100%;
+}
+
