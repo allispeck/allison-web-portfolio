@@ -8,14 +8,14 @@ $(document).ready(function(){
         return false;
     });
 
-    // $('.contact-form').submit(function (e) {
-    //     e.preventDefault();
-    //     $('.cont-flip').toggleClass('flipped');
-    //
-    //     $('#submitBtn').text('Thank you!');
-    //
-    //     setTimeout(location.reload.bind(location), 2000);
-    // })
+    $('.contact-form').submit(function (e) {
+        e.preventDefault();
+        $('.cont-flip').toggleClass('flipped');
+
+        $('#submitBtn').text('Thank you!');
+
+      //  setTimeout(location.reload.bind(location), 2000);
+    })
 
 });
 
