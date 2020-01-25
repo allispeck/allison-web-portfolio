@@ -47,6 +47,10 @@ body {
   font-family : 'Open Sans Condensed', sans-serif;
 }
 
+html {
+  scroll-behavior : smooth;
+}
+
 header {
   height : 8rem;
 }
