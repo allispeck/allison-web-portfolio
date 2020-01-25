@@ -11375,7 +11375,7 @@ a.text-dark:focus {
 }
 
 footer {
-  background-color: #2D2327;
+  background-color: #2F4858;
   color: #909CC2;
 }
 
@@ -11392,17 +11392,17 @@ header {
 }
 
 .connect {
-  background-color: #084887;
+  background-color: #F9AB55;
 }
 
 .connect:hover {
-  color: #F9AB55;
+  color: #084887;
 }
 
 /*===== NAVBAR =====*/
 
 nav {
-  background-color: #B5C2B7;
+  background-color: #86BBD8;
 }
 
 .navbar-toggler.active .toggler-icon:nth-of-type(1) {
@@ -11871,15 +11871,15 @@ nav {
 }
 
 #parallax-one {
-  background-color: #F9AB55;
+  background-color: #2F4858;
 }
 
 #parallax-two {
-  background-color: #909CC2;
+  background-color: #2F4858;
 }
 
 #parallax-three {
-  background-color: black;
+  background-color: #2F4858;
 }
 
 .ct-btn-scroll {
@@ -12109,7 +12109,7 @@ p {
 }
 
 .cont-contactBtn .cont-flip .front {
-  background-color: #084887;
+  background-color: #336699;
 }
 
 .cont-contactBtn .cont-flip .back {
@@ -12161,14 +12161,18 @@ p {
 }
 
 .cont-contactBtn .contact-form input[type=submit] {
-  background-color: #084887;
+  background-color: #F9AB55;
   border: none;
-  color: #fff;
+  color: #2D2327;
   height: 45px;
   font-size: 1rem;
   width: 100%;
   max-width: 93px;
   text-align: center;
+}
+
+.cont-contactBtn .contact-form #submitBtn:hover {
+  color: #F9AB55;
 }
 
 .cont-contactBtn .close {

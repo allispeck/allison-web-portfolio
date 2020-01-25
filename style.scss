@@ -9,7 +9,7 @@ $white : #FBF5F3;
 $dark-orange : #F9AB55;
 $green : #084887;
 $orange : #F9AB55;
-$light-green : #B8D5B8;
+$light-green : #86BBD8;
 $tan : #D7B49E;
 $light-purple : #909CC2;
 
@@ -36,7 +36,7 @@ $light-green : #B5C2B7;
 }
 
 footer {
-  background-color : $dark;
+  background-color : #2F4858;
   color            : $light-purple;
   a {
     color : $light-purple;
@@ -53,15 +53,15 @@ header {
 }
 
 .connect {
-  background-color : $green;
+  background-color : $dark-orange;
   &:hover {
-    color : $orange;
+    color : $green;
   }
 }
 
 /*===== NAVBAR =====*/
 nav {
-  background-color : $light-green;
+  background-color : #86BBD8;
 }
 
 .navbar-toggler.active .toggler-icon:nth-of-type(1) {
@@ -572,15 +572,15 @@ nav {
 }
 
 #parallax-one {
-  background-color : $dark-orange;
+  background-color : #2F4858;
 }
 
 #parallax-two {
-  background-color : $light-purple;
+  background-color : #2F4858;
 }
 
 #parallax-three {
-  background-color : black;
+  background-color : #2F4858;
 }
 
 .ct-btn-scroll {
@@ -842,7 +842,7 @@ a, p {
     }
 
     .front {
-      background-color : $green;
+      background-color : #336699;
     }
 
     .back {
@@ -891,15 +891,24 @@ a, p {
     }
 
     input[type="submit"] {
-      background-color : $green;
+      background-color : $orange;
       border           : none;
-      color            : $white;
+      color            : $dark;
       height           : 45px;
       font-size        : 1rem;
       width            : 100%;
       max-width        : 93px;
       text-align       : center;
+
+
     }
+
+    #submitBtn{
+      &:hover{
+        color: $orange;
+      }
+    }
+
 
   }
 
