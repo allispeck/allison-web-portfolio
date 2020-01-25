@@ -7,7 +7,7 @@ $(document).ready(function () {
     });
 
     $('.contact-form').delay(300).submit(function (e) {
-        e.preventDefault();
+        // e.preventDefault();
         $('.cont-flip').toggleClass('flipped');
 
         $('#submitBtn').text('Thank you!');
