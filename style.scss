@@ -1,6 +1,7 @@
 //@import "custom";
 @import "~bootstrap/scss/bootstrap";
 
+
 //color scheme
 $primary : #084887;
 $secondary : #E28413;
@@ -21,19 +22,19 @@ $light-green : #B5C2B7;
 
 .LogoBackground {
   background-size : contain;
-  width           : 198px;
+  //width           : 198px;
   height          : 132px;
   display         : inline-block;
   outline         : none;
 }
 
-.nav-item {
-  transition : all .2s ease-in-out;
-
-  &:hover {
-    transform : scale(1.5);
-  }
-}
+//.nav-item {
+//  transition : all .2s ease-in-out;
+//
+//  &:hover {
+//    transform : scale(1.5);
+//  }
+//}
 
 footer {
   background-color : #2F4858;
@@ -43,305 +44,82 @@ footer {
   }
 }
 
+#section4 {
+  margin-top    : 3.1rem;
+  margin-bottom : 3.1rem;
+
+  .form-group{
+    border-bottom: 1px solid $green;
+  }
+  input{
+    border:none;
+  }
+  textarea{
+    border:none;
+  }
+}
+
+#send {
+  font-size : 1.4rem;
+}
+
 body {
   font-family : 'Open Sans Condensed', sans-serif;
 }
-
 
 header {
   height : 8rem;
 }
 
-.connect {
-  background-color : $dark-orange;
-  &:hover {
-    color : $green;
-  }
-}
-
 /*===== NAVBAR =====*/
 nav {
-  background-color : #86BBD8;
+  background-color : #E67A71;
+
 }
 
-.navbar-toggler.active .toggler-icon:nth-of-type(1) {
-  -webkit-transform : rotate(45deg);
-  -moz-transform    : rotate(45deg);
-  -ms-transform     : rotate(45deg);
-  -o-transform      : rotate(45deg);
-  transform         : rotate(45deg);
-  top               : 7px;
+/* Brackets go out */
+.brackets a:before, .brackets a:after {
+  position   : absolute;
+  opacity    : 0;
+  font-size  : 35px;
+  top        : 0px;
+  transition : all 0.3s;
 }
 
-.navbar-toggler.active .toggler-icon:nth-of-type(2) {
-  opacity : 0;
+.brackets a:before {
+  content   : '{';
+  left      : 0px;
+  transform : translateX(10px);
 }
 
-.navbar-toggler.active .toggler-icon:nth-of-type(3) {
-  -webkit-transform : rotate(135deg);
-  -moz-transform    : rotate(135deg);
-  -ms-transform     : rotate(135deg);
-  -o-transform      : rotate(135deg);
-  transform         : rotate(135deg);
-  top               : -7px;
+.brackets a:after {
+  content   : '}';
+  right     : 0px;
+  transform : translateX(-10px);
 }
 
-@media only screen and (min-width : 768px) and (max-width : 991px) {
-  .navbar-collapse {
-    //position           : absolute;
-    top                : 100%;
-    left               : 0;
-    width              : 100%;
-    z-index            : 9;
-    -webkit-box-shadow : 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow    : 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
-    box-shadow         : 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
-    padding            : 5px 12px;
+.brackets a:hover:before, .brackets a:hover:after {
+  opacity   : 1;
+  transform : translateX(0px);
+}
+
+$bracket-x-padding : 0.2rem;
+.brackets {
+  color         : $white;
+  position      : relative;
+  padding-right : $bracket-x-padding;
+  padding-left  : $bracket-x-padding;
+}
+
+#big-nav {
+  .nav-link {
+    font-size      : 1.4rem;
+    color          : #2F4858;
+    letter-spacing : 0.08rem;
+    font-weight    : 500;
+    text-transform : uppercase;
   }
 }
-
-@media (max-width : 767px) {
-  .navbar-collapse {
-    //position           : absolute;
-    top                : 100%;
-    left               : 0;
-    width              : 100%;
-    z-index            : 9;
-    -webkit-box-shadow : 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow    : 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
-    box-shadow         : 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
-    padding            : 5px 12px;
-  }
-}
-
-.navbar-nav .nav-item {
-  margin-right : 45px;
-}
-
-@media only screen and (min-width : 992px) and (max-width : 1199px) {
-  .navbar-nav .nav-item {
-    margin-right : 30px;
-  }
-}
-
-@media only screen and (min-width : 768px) and (max-width : 991px) {
-  .navbar-nav .nav-item {
-    margin : 0;
-  }
-}
-
-@media (max-width : 767px) {
-  .navbar-nav .nav-item {
-    margin : 0;
-  }
-}
-
-.navbar-nav .nav-item a {
-  font-weight        : 400;
-  color              : $white;
-  -webkit-transition : all 0.3s ease-out 0s;
-  -moz-transition    : all 0.3s ease-out 0s;
-  -ms-transition     : all 0.3s ease-out 0s;
-  -o-transition      : all 0.3s ease-out 0s;
-  transition         : all 0.3s ease-out 0s;
-  padding            : 10px 0;
-  position           : relative;
-  font-size          : 1.4rem;
-
-  &:hover {
-    color           : $dark;
-    text-decoration : none;
-  }
-}
-
-@media only screen and (min-width : 768px) and (max-width : 991px) {
-  .navbar-nav .nav-item a {
-    display : block;
-    padding : 4px 0;
-    color   : #2E2E2E;
-  }
-}
-
-@media (max-width : 767px) {
-  .navbar-nav .nav-item a {
-    display : block;
-    padding : 4px 0;
-    color   : #2E2E2E;
-  }
-}
-
-.navbar-nav .nav-item:hover .sub-menu {
-  top        : 100%;
-  opacity    : 1;
-  visibility : visible;
-}
-
-@media only screen and (min-width : 768px) and (max-width : 991px) {
-  .navbar-nav .nav-item:hover .sub-menu {
-    top : 0;
-  }
-}
-
-@media (max-width : 767px) {
-  .navbar-nav .nav-item:hover .sub-menu {
-    top : 0;
-  }
-}
-
-.navbar-nav .nav-item .sub-menu {
-  width              : 200px;
-  background-color   : #fff;
-  -webkit-box-shadow : 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow    : 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-  box-shadow         : 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-  position           : absolute;
-  top                : 110%;
-  left               : 0;
-  opacity            : 0;
-  visibility         : hidden;
-  -webkit-transition : all 0.3s ease-out 0s;
-  -moz-transition    : all 0.3s ease-out 0s;
-  -ms-transition     : all 0.3s ease-out 0s;
-  -o-transition      : all 0.3s ease-out 0s;
-  transition         : all 0.3s ease-out 0s;
-}
-
-@media only screen and (min-width : 768px) and (max-width : 991px) {
-  .navbar-nav .nav-item .sub-menu {
-    position   : relative;
-    width      : 100%;
-    top        : 0;
-    display    : none;
-    opacity    : 1;
-    visibility : visible;
-  }
-}
-
-@media (max-width : 767px) {
-  .navbar-nav .nav-item .sub-menu {
-    position   : relative;
-    width      : 100%;
-    top        : 0;
-    display    : none;
-    opacity    : 1;
-    visibility : visible;
-  }
-}
-
-.navbar-nav .nav-item .sub-menu li {
-  display : block;
-}
-
-.navbar-nav .nav-item .sub-menu li a {
-  display : block;
-  padding : 8px 20px;
-  color   : #2E2E2E;
-}
-
-.navbar-nav .nav-item .sub-menu li a.active, .navbar-nav .nav-item .sub-menu li a:hover {
-  padding-left : 25px;
-  color        : #361CC1;
-}
-
-.navbar-nav .sub-nav-toggler {
-  display : none;
-}
-
-@media only screen and (min-width : 768px) and (max-width : 991px) {
-  .navbar-nav .sub-nav-toggler {
-    display    : block;
-    position   : absolute;
-    right      : 0;
-    top        : 0;
-    background : none;
-    color      : #2E2E2E;
-    font-size  : 18px;
-    border     : 0;
-    width      : 30px;
-    height     : 30px;
-  }
-}
-
-@media (max-width : 767px) {
-  .navbar-nav .sub-nav-toggler {
-    display    : block;
-    position   : absolute;
-    right      : 0;
-    top        : 0;
-    background : none;
-    color      : #2E2E2E;
-    font-size  : 18px;
-    border     : 0;
-    width      : 30px;
-    height     : 30px;
-  }
-}
-
-.navbar-nav .sub-nav-toggler span {
-  width             : 8px;
-  height            : 8px;
-  border-left       : 1px solid #2E2E2E;
-  border-bottom     : 1px solid #2E2E2E;
-  -webkit-transform : rotate(-45deg);
-  -moz-transform    : rotate(-45deg);
-  -ms-transform     : rotate(-45deg);
-  -o-transform      : rotate(-45deg);
-  transform         : rotate(-45deg);
-  position          : relative;
-  top               : -5px;
-}
-
-@media only screen and (min-width : 768px) and (max-width : 991px) {
-  .navbar-btn {
-    position          : absolute;
-    top               : 50%;
-    right             : 50px;
-    -webkit-transform : translateY(-50%);
-    -moz-transform    : translateY(-50%);
-    -ms-transform     : translateY(-50%);
-    -o-transform      : translateY(-50%);
-    transform         : translateY(-50%);
-
-  }
-}
-
-@media (max-width : 767px) {
-  .navbar-btn {
-    position          : absolute;
-    top               : 50%;
-    right             : 50px;
-    -webkit-transform : translateY(-50%);
-    -moz-transform    : translateY(-50%);
-    -ms-transform     : translateY(-50%);
-    -o-transform      : translateY(-50%);
-    transform         : translateY(-50%);
-  }
-}
-
-.navbar-btn .main-btn {
-  height          : 45px;
-  line-height     : 45px;
-  background      : -webkit-linear-gradient(left, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
-  background      : -o-linear-gradient(left, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
-  background      : linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
-  background-size : 200%;
-
-  &:hover {
-    text-decoration     : none;
-    background-position : right center;
-    color               : $dark;
-  }
-}
-
-//.fixed-nav-bar {
-//  position: fixed;
-//  //top: 0;
-//  //left: 0;
-//  //z-index: 9999;
-//  width: 100%;
-//  //height: 50px;
-//  //background-color: #00a087;
-//}
 
 /*===== HEADER HERO =====*/
 .header-hero {
@@ -552,13 +330,6 @@ nav {
   margin-bottom  : 20px;
 }
 
-.parallax {
-  background-attachment : inherit !important;
-}
-
-.parallax {
-  background-attachment : inherit !important;
-}
 
 .parallax {
   background-attachment : inherit !important;
@@ -572,7 +343,7 @@ nav {
 }
 
 #parallax-one {
-  background-color : #2F4858;
+  background-image: url("bg-1.jpg");
 }
 
 #parallax-two {
@@ -580,7 +351,8 @@ nav {
 }
 
 #parallax-three {
-  background-color : #2F4858;
+  background-color : #FFE46F;
+  color: #2F4858!important;
 }
 
 .ct-btn-scroll {
@@ -606,13 +378,6 @@ figure {
 .header-hero-content {
   padding-top    : 10%;
   padding-bottom : 10%;
-}
-
-.pic {
-  width         : 20rem;
-  height        : auto;
-  margin-right  : -2rem;
-  margin-bottom : -65px;
 }
 
 .jumbotron {
@@ -693,7 +458,7 @@ a {
 
 //contact form
 
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900&display=swap);
 
 $white : #fff;
 
@@ -816,113 +581,6 @@ a, p {
   }
 }
 
-.cont-contactBtn {
-  height   : 359px;
-  margin   : 0 auto;
-  width    : 574px;
-  position : relative;
-
-  @include perspective(800px);
-
-  .cont-flip {
-    position : absolute;
-    @include transition(.5s);
-    @include transform-style();
-    height   : 100%;
-    width    : 100%;
-
-    .front, .back {
-      display  : block;
-      margin   : 0;
-      height   : 100%;
-      width    : 100%;
-      position : absolute;
-
-      @include backface-visibility;
-    }
-
-    .front {
-      background-color : #336699;
-    }
-
-    .back {
-      background-color : $white;
-      @include transform(180);
-    }
-  }
-
-  .btn {
-    margin-top : 155px;
-  }
-
-  .cont-flip.flipped {
-    @include transform(180);
-  }
-
-  .contact-form {
-    margin-top   : 50px;
-    margin-right : auto;
-    margin-left  : auto;
-    width        : 80%;
-
-    input, textarea {
-      border         : 1px solid #808080;
-      font-size      : 12px;
-      padding        : 10px 0;
-      text-transform : uppercase;
-    }
-
-    input[type="text"] {
-      float         : left;
-      margin-bottom : 8px;
-      padding-left  : 3%;
-      width         : 46.6%;
-    }
-
-    .gutter {
-      margin-right : 2.8%;
-    }
-
-    textarea {
-      height        : 106px;
-      padding-left  : 3%;
-      margin-bottom : 22px;
-      width         : 96.2%;
-    }
-
-    input[type="submit"] {
-      background-color : $orange;
-      border           : none;
-      color            : $dark;
-      height           : 45px;
-      font-size        : 1rem;
-      width            : 100%;
-      max-width        : 93px;
-      text-align       : center;
-
-
-    }
-
-    #submitBtn{
-      &:hover{
-        color: $orange;
-      }
-    }
-
-
-  }
-
-  .close {
-    display    : block;
-    height     : 19px;
-    width      : 19px;
-    background : url('https://i.imgur.com/WoKg12q.png') no-repeat center;
-    position   : absolute;
-    top        : 15px;
-    right      : 3%;
-  }
-}
-
 .btn {
   border          : 3px $white solid;
   color           : $white;
@@ -936,5 +594,98 @@ a, p {
   text-transform  : uppercase;
   text-decoration : none;
   width           : 100%;
+}
+
+.connect {
+  background-color : lighten($dark-orange, 20%);
+  color            : darken($dark-orange, 10%);
+  letter-spacing   : 0.02rem;
+  &:hover {
+    color            : darken($dark-orange, 20%);
+    background-color : lighten($dark-orange, 15%);
+  }
+}
+
+.min-h-100 {
+  min-height : 100%;
+}
+
+.caro-card {
+  height : 550px;
+}
+
+//mobile nav
+
+.topnav {
+  display : none;
+}
+
+@media (max-device-width : 992px) {
+
+  .topnav img {
+    width  : 10.3rem;
+    height : 8.3rem;
+  }
+
+  #big-nav {
+    display : none !important;
+    .nav-link {
+      color : $green;
+    }
+  }
+
+  header {
+    margin-bottom : 1.1rem;
+  }
+
+  .topnav {
+    display          : block;
+    overflow         : hidden;
+    background-color : $dark-purple;
+    position         : relative;
+    z-index          : 9999;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display : none;
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+    color           : white;
+    padding         : 14px 16px;
+    text-decoration : none;
+    text-transform : uppercase;
+    font-size       : 17px;
+    display         : block;
+  }
+
+  #myLinks a {
+    border-bottom : 1px solid $white;
+  }
+
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background : transparent;
+    font-size  : 2.1rem;
+    color      : black;
+    display    : block;
+    position   : absolute;
+    right      : 0;
+    top        : 0;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color : transparent;
+    color            : black;
+  }
+
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color : $light-purple;
+    color            : white;
+  }
 }
 
