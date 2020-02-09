@@ -11365,11 +11365,11 @@ a.text-dark:focus {
 
 footer {
   background-color: #6769AC;
-  color: #909CC2;
+  color: #b6c3ef;
 }
 
 footer a {
-  color: #909CC2;
+  color: #b6c3ef;
 }
 
 #section4 {
@@ -11404,7 +11404,7 @@ header {
 /*===== NAVBAR =====*/
 
 nav {
-  background-color: #6769AC;
+  background-color: #BE878D;
 }
 
 /* Brackets go out */
@@ -11912,6 +11912,12 @@ p {
 }
 
 @media (max-device-width: 992px) {
+  .about-me {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+            flex-direction: column-reverse !important;
+  }
+
   .topnav img {
     width: 10.3rem;
     height: 8.3rem;
@@ -11932,7 +11938,6 @@ p {
   .topnav {
     display: block;
     overflow: hidden;
-    background-color: #A95978;
     position: relative;
     z-index: 9999;
   }
@@ -11955,6 +11960,7 @@ p {
   }
 
   #myLinks a {
+    background-color: #1D1D1D;
     border-bottom: 1px solid #fff;
   }
 
@@ -11973,15 +11979,19 @@ p {
   /* Add a grey background color on mouse-over */
 
   .topnav a:hover {
-    background-color: transparent;
+    background-color: white;
     color: black;
   }
 
   /* Style the active link (or home/logo) */
 
   .active {
-    background-color: #6769AC;
+    background-color: #BE878D;
     color: white;
   }
+}
+
+.carousel-item img {
+  max-height: 300px;
 }
 

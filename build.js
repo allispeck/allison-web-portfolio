@@ -140,7 +140,7 @@ function myFunction() {
   } else {
     x.style.display = "block";
   }
-}
+} //slider
 
 /***/ }),
 
@@ -162,8 +162,8 @@ function myFunction() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/allisonspeck/Udemy Courses/allison-web-portfolio/app.js */"./app.js");
-module.exports = __webpack_require__(/*! /Users/allisonspeck/Udemy Courses/allison-web-portfolio/style.scss */"./style.scss");
+__webpack_require__(/*! /Users/allisonspeck/Projects/allison-web-portfolio/app.js */"./app.js");
+module.exports = __webpack_require__(/*! /Users/allisonspeck/Projects/allison-web-portfolio/style.scss */"./style.scss");
 
 
 /***/ })
