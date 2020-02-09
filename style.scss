@@ -1,7 +1,6 @@
 //@import "custom";
 @import "~bootstrap/scss/bootstrap";
 
-
 //color scheme
 $primary : #084887;
 $secondary : #E28413;
@@ -37,7 +36,7 @@ $light-green : #B5C2B7;
 //}
 
 footer {
-  background-color : #2F4858;
+  background-color : #6769AC;
   color            : $light-purple;
   a {
     color : $light-purple;
@@ -48,14 +47,14 @@ footer {
   margin-top    : 3.1rem;
   margin-bottom : 3.1rem;
 
-  .form-group{
-    border-bottom: 1px solid $green;
+  .form-group {
+    border-bottom : 1px solid $green;
   }
-  input{
-    border:none;
+  input {
+    border : none;
   }
-  textarea{
-    border:none;
+  textarea {
+    border : none;
   }
 }
 
@@ -73,8 +72,7 @@ header {
 
 /*===== NAVBAR =====*/
 nav {
-  background-color : #E67A71;
-
+  background-color : #6769AC;
 }
 
 /* Brackets go out */
@@ -114,7 +112,7 @@ $bracket-x-padding : 0.2rem;
 #big-nav {
   .nav-link {
     font-size      : 1.4rem;
-    color          : #2F4858;
+    color          : $white;
     letter-spacing : 0.08rem;
     font-weight    : 500;
     text-transform : uppercase;
@@ -330,12 +328,10 @@ $bracket-x-padding : 0.2rem;
   margin-bottom  : 20px;
 }
 
-
 .parallax {
   background-attachment : inherit !important;
   background-repeat     : repeat;
   background-size       : cover;
-  position              : absolute;
   top                   : 0px;
   bottom                : 0px;
   width                 : 100%;
@@ -343,16 +339,18 @@ $bracket-x-padding : 0.2rem;
 }
 
 #parallax-one {
-  background-image: url("bg-1.jpg");
+  background-image : url("images/para1.png");
+  background-size  : cover;
 }
 
 #parallax-two {
-  background-color : #2F4858;
+  background-image : url("images/para2.png");
+  background-size  : cover;
 }
 
 #parallax-three {
-  background-color : #FFE46F;
-  color: #2F4858!important;
+  background-image : url("images/para1.png");
+  background-size  : cover;
 }
 
 .ct-btn-scroll {
@@ -630,7 +628,7 @@ a, p {
   #big-nav {
     display : none !important;
     .nav-link {
-      color : $green;
+      color : $white;
     }
   }
 
@@ -641,7 +639,7 @@ a, p {
   .topnav {
     display          : block;
     overflow         : hidden;
-    background-color : $dark-purple;
+    background-color : #A95978;
     position         : relative;
     z-index          : 9999;
   }
@@ -656,7 +654,7 @@ a, p {
     color           : white;
     padding         : 14px 16px;
     text-decoration : none;
-    text-transform : uppercase;
+    text-transform  : uppercase;
     font-size       : 17px;
     display         : block;
   }
@@ -684,7 +682,7 @@ a, p {
 
   /* Style the active link (or home/logo) */
   .active {
-    background-color : $light-purple;
+    background-color : #6769AC;
     color            : white;
   }
 }

@@ -11364,7 +11364,7 @@ a.text-dark:focus {
 }
 
 footer {
-  background-color: #2F4858;
+  background-color: #6769AC;
   color: #909CC2;
 }
 
@@ -11404,7 +11404,7 @@ header {
 /*===== NAVBAR =====*/
 
 nav {
-  background-color: #E67A71;
+  background-color: #6769AC;
 }
 
 /* Brackets go out */
@@ -11449,7 +11449,7 @@ nav {
 
 #big-nav .nav-link {
   font-size: 1.4rem;
-  color: #2F4858;
+  color: #FBF5F3;
   letter-spacing: 0.08rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -11666,7 +11666,6 @@ nav {
   background-attachment: inherit !important;
   background-repeat: repeat;
   background-size: cover;
-  position: absolute;
   top: 0px;
   bottom: 0px;
   width: 100%;
@@ -11674,16 +11673,18 @@ nav {
 }
 
 #parallax-one {
-  background-image: url(/images/bg-1.jpg?6cb52dccc09bc48166e9f1f7d2882f64);
+  background-image: url(/images/para1.png?03d4a2756bd43c2436d6067a8f0e4a95);
+  background-size: cover;
 }
 
 #parallax-two {
-  background-color: #2F4858;
+  background-image: url(/images/para2.png?8937c6ed5dbec23f7025434711e18cdd);
+  background-size: cover;
 }
 
 #parallax-three {
-  background-color: #FFE46F;
-  color: #2F4858 !important;
+  background-image: url(/images/para1.png?03d4a2756bd43c2436d6067a8f0e4a95);
+  background-size: cover;
 }
 
 .ct-btn-scroll {
@@ -11921,7 +11922,7 @@ p {
   }
 
   #big-nav .nav-link {
-    color: #084887;
+    color: #fff;
   }
 
   header {
@@ -11931,7 +11932,7 @@ p {
   .topnav {
     display: block;
     overflow: hidden;
-    background-color: #45364B;
+    background-color: #A95978;
     position: relative;
     z-index: 9999;
   }
@@ -11979,7 +11980,7 @@ p {
   /* Style the active link (or home/logo) */
 
   .active {
-    background-color: #909CC2;
+    background-color: #6769AC;
     color: white;
   }
 }
