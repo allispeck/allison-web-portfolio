@@ -86,61 +86,55 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./app.js":
-/*!****************!*\
-  !*** ./app.js ***!
-  \****************/
+/***/ "./js/app.js":
+/*!*******************!*\
+  !*** ./js/app.js ***!
+  \*******************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-//form js
-$(document).ready(function () {
-  var Toast = Swal.mixin({
-    toast: true,
-    position: 'top-end',
-    showConfirmButton: false,
-    timer: 3000,
-    timerProgressBar: true,
-    onOpen: function onOpen(toast) {
-      toast.addEventListener('mouseenter', Swal.stopTimer);
-      toast.addEventListener('mouseleave', Swal.resumeTimer);
-    }
-  });
-  var url = new URL(window.location.href);
-
-  if (url.searchParams.get('email-sent')) {
-    Toast.fire({
-      icon: 'success',
-      title: 'Message Sent!'
-    });
-  }
-}); // smooth scroll
-
-$(document).ready(function () {
-  $("a").on('click', function (event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function () {
-        window.location.hash = hash;
+// Filter Buttons
+(function () {
+  // Grab each button and project card
+  var buttons = document.querySelectorAll('.btn');
+  var storeItems = document.querySelectorAll('.store-item');
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function (e) {
+      e.preventDefault();
+      var filter = e.target.dataset.filter;
+      storeItems.forEach(function (item) {
+        if (filter === 'all') {
+          item.style.display = 'block';
+        } else {
+          if (item.classList.contains(filter)) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        }
       });
-    }
+    });
   });
-}); //nav
+})(); //wire up filter search box
 
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 
-function myFunction() {
-  var x = document.getElementById("myLinks");
+(function () {
+  var searchBox = document.querySelector('#search-item');
+  var storeItems = document.querySelectorAll('.store-item'); //storeItems.forEach(item=>{console.log(item.textContent)});
 
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-} //slider
+  searchBox.addEventListener('keyup', function (e) {
+    var searchFilter = e.target.value.toLowerCase().trim(); //display only items that contain filter input
+
+    console.log(searchFilter);
+    storeItems.forEach(function (item) {
+      if (item.textContent.toLowerCase().trim().includes(searchFilter)) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
+})();
 
 /***/ }),
 
@@ -156,13 +150,13 @@ function myFunction() {
 /***/ }),
 
 /***/ 0:
-/*!***********************************!*\
-  !*** multi ./app.js ./style.scss ***!
-  \***********************************/
+/*!**************************************!*\
+  !*** multi ./js/app.js ./style.scss ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/allisonspeck/Projects/allison-web-portfolio/app.js */"./app.js");
+__webpack_require__(/*! /Users/allisonspeck/Projects/allison-web-portfolio/js/app.js */"./js/app.js");
 module.exports = __webpack_require__(/*! /Users/allisonspeck/Projects/allison-web-portfolio/style.scss */"./style.scss");
 
 
