@@ -23,12 +23,16 @@ $light-green : #B5C2B7;
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
 
 :root {
-  --mainPink    : #ef7998;
+  --mainPink    : #ef666b;
   --mainYellow  : rgb(249, 228, 148);
   --mainWhite   : #fff;
   --mainBlack   : #000;
   --yellowTrans : rgba(249, 228, 148, 0.5);
   --mainGrey    : rgb(238, 238, 238);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -184,12 +188,16 @@ body {
   color : $mainYellow;
 }
 
-/*end of  store items */
+/*end of card items */
 .search-box {
   background : var(--mainPink);
   color      : var(--mainBlack);
 }
 
 footer {
-  background-color : pink;
+  background-color : #DDDCBD;
+}
+
+.fa-linkedin{
+  color: #0e76a8;
 }

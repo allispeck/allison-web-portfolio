@@ -96,7 +96,7 @@
 // Filter Buttons
 (function () {
   // Grab each button and project card
-  var buttons = document.querySelectorAll('.btn');
+  var buttons = document.querySelectorAll('.filter-btn');
   var storeItems = document.querySelectorAll('.store-item');
   buttons.forEach(function (button) {
     button.addEventListener('click', function (e) {
@@ -134,7 +134,34 @@
       }
     });
   });
-})();
+})(); // toasty message
+
+
+$(document).ready(function () {
+  var Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    background: "#090613",
+    customClass: "toasty",
+    onOpen: function onOpen(toast) {
+      toast.addEventListener('mouseenter', Swal.stopTimer);
+      toast.addEventListener('mouseleave', Swal.resumeTimer);
+    }
+  });
+  var url = new URL(window.location.href);
+
+  if (url.searchParams.get('email-sent')) {
+    Toast.fire({
+      icon: 'success',
+      title: 'Message Sent!',
+      background: "#5d9aff",
+      fontColor: "white"
+    });
+  }
+});
 
 /***/ }),
 

@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="manifest" href="images/favicon_io/site.webmanifest">
 
     <!-- font awesome -->
     <link rel="stylesheet" href="css/all.css">
@@ -33,13 +39,13 @@
                     <a class="nav-link" href="#">home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">about</a>
+                    <a class="nav-link " href="#about">about</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">projects</a>
+                    <a class="nav-link" href="#projects">projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">contact</a>
+                    <a class="nav-link" href="#section4">contact</a>
                 </li>
             </ul>
             <div class="nav-info-items d-none d-lg-flex ">
@@ -57,11 +63,12 @@
     <div class="container-fluid">
         <div class="row max-height justify-content-center align-items-center">
             <div class="col-10 mx-auto banner text-center">
-                <h1 class="text-capitalize cursive-title">welcome to my<strong class="banner-title "> portfolio website</strong></h1>
+                <h1 class="text-capitalize cursive-title">welcome to my<strong class="banner-title "> portfolio
+                    website</strong></h1>
                 <p class="text-dark">Here I have details
                     about projects I've worked on, and technologies I've had exposure to. Take a look around,
                     and please reach out if you have any questions at all. I look forward to meeting you!</p>
-                <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
+                <a href="#about" class="btn banner-link text-uppercase my-2">explore</a>
 
             </div>
         </div>
@@ -90,7 +97,7 @@
                     contact form if you would like to connect about an opportunity,
                     project, or just to chat about my other passion- dogs!
                 </p>
-                <a href="#" class="btn btn-outline-secondary btn-black text-uppercase ">connect</a>
+                <a href="#section4" class="btn btn-outline-secondary btn-black text-uppercase ">connect</a>
 
             </div>
             <div class="col-10 mx-auto col-md-6 align-self-center my-5">
@@ -106,7 +113,7 @@
 
 
 <!-- store -->
-<section id="store" class="store py-5">
+<section id="projects" class="store py-5">
     <div class="container">
         <!-- section title -->
         <div class="row">
@@ -118,13 +125,13 @@
         <!--filter buttons -->
         <div class="row">
             <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
-                <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="all">
+                <a href="#" class="btn filter-btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="all">
                     all</a>
-                <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+                <a href="#" class="btn filter-btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
                    data-filter="php">PHP</a>
-                <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+                <a href="#" class="btn filter-btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
                    data-filter="javascript">VANILLA JS</a>
-                <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+                <a href="#" class="btn filter-btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
                    data-filter="vue">VUE</a>
             </div>
         </div>
@@ -159,9 +166,6 @@
                     <div class="card-body">
                         <div class="card-text d-flex justify-content-between text-capitalize">
                             <h5 id="store-item-name">Website Redesign</h5>
-                            <h5 class="store-item-value">$ <strong id="store-item-price"
-                                                                   class="font-weight-bold">5</strong></h5>
-
                         </div>
                     </div>
 
@@ -182,8 +186,7 @@
                     <div class="card-body">
                         <div class="card-text d-flex justify-content-between text-capitalize">
                             <h5 id="store-item-name">Roll 'Em Dice Game</h5>
-                            <h5 class="store-item-value">$ <strong id="store-item-price"
-                                                                   class="font-weight-bold">5</strong></h5>
+
 
                         </div>
                     </div>
@@ -204,8 +207,7 @@
                     <div class="card-body">
                         <div class="card-text d-flex justify-content-between text-capitalize">
                             <h5 id="store-item-name">Movie Database</h5>
-                            <h5 class="store-item-value">$ <strong id="store-item-price"
-                                                                   class="font-weight-bold">5</strong></h5>
+
 
                         </div>
                     </div>
@@ -227,8 +229,7 @@
                     <div class="card-body">
                         <div class="card-text d-flex justify-content-between text-capitalize">
                             <h5 id="store-item-name">alliUI</h5>
-                            <h5 class="store-item-value">$ <strong id="store-item-price"
-                                                                   class="font-weight-bold">5</strong></h5>
+
 
                         </div>
                     </div>
@@ -251,8 +252,6 @@
                     <div class="card-body">
                         <div class="card-text d-flex justify-content-between text-capitalize">
                             <h5 id="store-item-name">Todo App</h5>
-                            <h5 class="store-item-value">$ <strong id="store-item-price"
-                                                                   class="font-weight-bold">10</strong></h5>
 
                         </div>
                     </div>
@@ -274,8 +273,7 @@
                     <div class="card-body">
                         <div class="card-text d-flex justify-content-between text-capitalize">
                             <h5 id="store-item-name">Site Bookmarker App</h5>
-                            <h5 class="store-item-value">$ <strong id="store-item-price"
-                                                                   class="font-weight-bold">10</strong></h5>
+
 
                         </div>
                     </div>
@@ -297,8 +295,6 @@
                     <div class="card-body">
                         <div class="card-text d-flex justify-content-between text-capitalize">
                             <h5 id="store-item-name">BookList App</h5>
-                            <h5 class="store-item-value">$ <strong id="store-item-price"
-                                                                   class="font-weight-bold">10</strong></h5>
 
                         </div>
                     </div>
@@ -320,8 +316,7 @@
                     <div class="card-body">
                         <div class="card-text d-flex justify-content-between text-capitalize">
                             <h5 id="store-item-name">PupDate Web App</h5>
-                            <h5 class="store-item-value">$ <strong id="store-item-price"
-                                                                   class="font-weight-bold">10</strong></h5>
+
 
                         </div>
                     </div>
@@ -343,8 +338,6 @@
                     <div class="card-body">
                         <div class="card-text d-flex justify-content-between text-capitalize">
                             <h5 id="store-item-name">CSV Parser</h5>
-                            <h5 class="store-item-value">$ <strong id="store-item-price"
-                                                                   class="font-weight-bold">15</strong></h5>
 
                         </div>
                     </div>
@@ -391,8 +384,8 @@
                 <input type="text" name="_honey" style="display:none">
                 <input type="hidden" name="_captcha" value="false">
                 <div class="text-center">
-                    <button type="submit" class="connect font-weight-bold btn btn-start-order"><i id="send"
-                                                                                                  class="far fa-comment-dots font-weight-bolder"></i>
+                    <button type="submit" class="btn btn-outline-secondary btn-black text-uppercase ">
+                        Send Message <i id="send" class="far fa-comment-dots font-weight-bolder"></i>
                     </button>
                 </div>
             </form>
@@ -411,9 +404,9 @@
                     <h3 class="my-4 cursive-title">Say<span class="mx-2 font-italic text-white ">Hello</span></h3>
 
                     <p class="footer-links font-weight-bold">
-                        <a class="text-white" href="#section2">About</a>
+                        <a class="text-white" href="#about">About</a>
                         |
-                        <a class="text-white" href="#section3">Projects</a>
+                        <a class="text-white" href="#projects">Projects</a>
                         |
                         <a class="text-white modalBtn" href="#">Resume</a>
                         |
@@ -448,10 +441,9 @@
                     can
                     help you get there. </p>
                 <div class="py-2">
-                    <a href="#"><i class="fab fa-facebook fa-2x text-primary mx-3"></i></a>
-                    <a href="#"><i class="fab fa-google-plus fa-2x text-danger mx-3"></i></a>
-                    <a href="#"><i class="fab fa-twitter fa-2x text-info mx-3"></i></a>
-                    <a href="#"><i class="fab fa-youtube fa-2x text-danger mx-3"></i></a>
+                    <a href="https://www.facebook.com/allison.speck"><i class="fab fa-facebook fa-2x text-primary mx-3"></i></a>
+                    <a href="https://twitter.com/speckalli"><i class="fab fa-twitter fa-2x text-info mx-3"></i></a>
+                    <a href="www.linkedin.com/in/allison-speck"><i class="fab fa-linkedin fa-2x mx-3"></i></a>
                 </div>
             </div>
         </div>
@@ -463,6 +455,7 @@
 <!-- bootstrap js -->
 <script src="js/bootstrap.bundle.min.js"></script>
 <!-- script js -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 <script src="js/app.js"></script>
 </body>
 
