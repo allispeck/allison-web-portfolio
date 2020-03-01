@@ -1,449 +1,469 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 
-    <!-- Material Design Bootstrap -->
-    <link rel="stylesheet" href="MDB-Free_4.11.0/css/mdb.min.css">
-    <!-- Your custom styles (optional) -->
-    <link rel="stylesheet" href="MDB-Free_4.11.0/css/style.css">
 
-
-    <!--fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
-
-
-    <!--default css-->
-    <link rel="stylesheet" href="style.css">
-
-    <!--favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="manifest" href="images/favicon_io/site.webmanifest">
-
-
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.css">
     <title>Allison Speck - Web Services</title>
+    <style>
+    </style>
 </head>
+
 <body>
-
+<!-- header -->
 <header>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg" id="big-nav">
-        <div class="d-flex justify-content-center w-100 topnav" id="bigNav">
-            <div class="d-flex flex-column justify-content-center flex-1" id="navLeft">
-                <ul class="navbar-nav justify-content-end">
-                    <li class="nav-item active brackets">
-                        <a class="nav-link" href="#home">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item brackets">
-                        <a class="nav-link" href="#section2">About</a>
-                    </li>
-                </ul>
-            </div>
-            <a class="" href="#">
-                <div id="logo"><img src="images/asLogo.png" class="LogoBackground" alt=""></div>
-            </a>
-            <div class="d-flex flex-column justify-content-center flex-1" id="navRight">
-                <ul class="navbar-nav">
-                    <li class="nav-item brackets">
-                        <a class="nav-link" href="#section3">Projects</a>
-                    </li>
-                    <li class="nav-item brackets">
-                        <a class="nav-link" href="#section4">Contact</a>
-                    </li>
-                </ul>
+    <!-- navbar  -->
+
+    <nav class="navbar navbar-expand-lg px-4">
+        <a class="navbar-brand" href="#"><img src="images/asLogo.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+            <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNav">
+            <ul class="navbar-nav mx-auto text-capitalize">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">contact</a>
+                </li>
+            </ul>
+            <div class="nav-info-items d-none d-lg-flex ">
+                <!-- single info -->
+                <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+                    <span class="info-icon mx-lg-3"><i class="fab fa-linkedin"></i></span>
+                    <a class="mb-0" href="www.linkedin.com/in/allison-speck">/in/allison-speck</a>
+                </div>
+                <!-- end of single info -->
             </div>
         </div>
-
-
     </nav>
-    <!--mobile nav-->
-    <div class="topnav">
-        <a href="#home" class="active text-center"><img src="images/asLogo.png"/> </a>
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-            <a href="#home">Home</a>
-            <a href="#section2">About</a>
-            <a href="#section3">Projects</a>
-            <a href="#section4">Contact</a>
+    <!-- end of nav -->
+    <!-- banner  -->
+    <div class="container-fluid">
+        <div class="row max-height justify-content-center align-items-center">
+            <div class="col-10 mx-auto banner text-center">
+                <h1 class="text-capitalize cursive-title">welcome to my<strong class="banner-title "> portfolio website</strong></h1>
+                <p class="text-dark">Here I have details
+                    about projects I've worked on, and technologies I've had exposure to. Take a look around,
+                    and please reach out if you have any questions at all. I look forward to meeting you!</p>
+                <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
+
+            </div>
         </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
     </div>
+
+    <!--end of  banner  -->
 </header>
-
-<div id="home" class="header-hero bg_cover" style="">
+<!-- header -->
+<!-- about us -->
+<section class="about py-5" id="about">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="header-hero-content text-center text-dark">
-                    <h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
-                        Hello!</h3>
-                    <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">Welcome to
-                        my portfolio website</h2>
-                    <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">Here I have details
-                        about projects I've worked on, and technologies I've had exposure to. Take a look around,
-                        and please reach out if you have any questions at all. I look forward to meeting you!</p>
-                </div> <!-- header hero content -->
+
+        <div class="row">
+            <div class="col-10 mx-auto col-md-6 my-5">
+                <h1 class="text-capitalize cursive-title">About <strong class="banner-title ">me</strong></h1>
+                <p class="my-4 text-muted w-75">My Name is Allison Speck. I am a web developer from London, ON, and
+                    three-time graduate from
+                    Fanshawe College. Taking an idea and making it come to
+                    life is one of my favourite things to do! There are so many technologies
+                    and techniques out there, and they are forever evolving. I'm excited to keep growing and
+                    advancing
+                    in my field, and I am open to any project that will further my experience.</p>
+                <p class="my-4 text-muted w-75">
+                    Thank you for taking the time to check out my portfolio. Please send
+                    me an <a href="mailto:allisonmspeck@gmail.com">email</a> or use the
+                    contact form if you would like to connect about an opportunity,
+                    project, or just to chat about my other passion- dogs!
+                </p>
+                <a href="#" class="btn btn-outline-secondary btn-black text-uppercase ">connect</a>
+
             </div>
-        </div> <!-- row -->
-    </div> <!-- container -->
-    <div id="particles-1" class="particles"></div>
-</div> <!-- header hero -->
-
-<section class="company-heading intro-type" id="parallax-one">
-    <div class="container">
-        <div class="row product-title-info">
-            <div class="col-md-12">
-                <h1>TAKE A LOOK.</h1>
-                <a class="ct-btn-scroll ct-js-btn-scroll" href="#section2"><img alt="Arrow Down Icon"
-                                                                                src="https://www.solodev.com/assets/anchor/arrow-down.png"></a>
+            <div class="col-10 mx-auto col-md-6 align-self-center my-5">
+                <div class="about-img__container">
+                    <img src="images/as-log02.jpg" class="img-fluid" alt="">
+                </div>
             </div>
         </div>
     </div>
-    <div class="parallax" id="parallax-cta"
-         style="background-image:url(https://www.solodev.com/assets/anchor/company-hero2.jpg);"></div>
 </section>
-<div class="main">
-    <section id="section2">
-        <div class="container jumbo">
-            <div class="jumbotron">
-                <div class="row about-me">
-                    <div class="col-md-8 col-12 d-flex justify-content-center flex-column">
-                        <h2 aos="fade" aos-duration="500" class="item animated fadeInLeft">A little about me.</h2>
-                        <p>My Name is Allison Speck. I am a web developer from London, ON, and three-time graduate from
-                            Fanshawe
-                            College. Taking an idea and making it come to
-                            life is one of my favourite things to do! There are so many technologies
-                            and techniques out there, and they are forever evolving. I'm excited to keep growing and
-                            advancing
-                            in my field, and I am open to any project that will further my experience.
-                        </p>
-                        <p>
-                            Thank you for taking the time to check out my portfolio. Please send
-                            me an <a href="mailto:allisonmspeck@gmail.com">email</a> or use the
-                            contact form if you would like to connect about an opportunity,
-                            project, or just to chat about my other passion- dogs!
-                        </p>
-                        <p><a class="btn connect btn-lg font-weight-bold" href="#section4" role="button">Let's
-                            Connect.</a></p>
-                    </div>
 
-                    <div class="d-flex flex-column justify-content-center col-md-4 col-12 text-right">
-                        <div class="w-75 m-auto pb-4 image-wrapper">
-                            <img class="pic rounded-circle shadow" src="images/as-log02.jpg" alt="Allison Speck"/>
+<!-- end of about us -->
+
+
+<!-- store -->
+<section id="store" class="store py-5">
+    <div class="container">
+        <!-- section title -->
+        <div class="row">
+            <div class="col-10 mx-auto col-sm-6 text-center">
+                <h1 class="text-capitalize cursive-title">Project <strong class="banner-title ">Samples</strong></h1>
+            </div>
+        </div>
+        <!-- end of section title -->
+        <!--filter buttons -->
+        <div class="row">
+            <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+                <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="all">
+                    all</a>
+                <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+                   data-filter="php">PHP</a>
+                <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+                   data-filter="javascript">VANILLA JS</a>
+                <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+                   data-filter="vue">VUE</a>
+            </div>
+        </div>
+        <!-- search box -->
+        <div class="row">
+
+            <div class="col-10 mx-auto col-md-6">
+                <form>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend ">
+                            <span class="input-group-text search-box" id="search-icon"><i
+                                    class="fas fa-search"></i></span>
                         </div>
+                        <input type="text" class="form-control" placeholder='item....' id="search-item">
                     </div>
-                </div>
 
-            </div>
-
-        </div>
-    </section>
-    <section class="company-heading intro-type" id="parallax-two">
-        <div class="container">
-            <div class="row product-title-info">
-                <div class="col-md-12">
-                    <h1>PROJECTS.</h1>
-                    <a class="ct-btn-scroll ct-js-btn-scroll" href="#section3"><img alt="Arrow Down Icon"
-                                                                                    src="https://www.solodev.com/assets/anchor/arrow-down.png"></a>
-                </div>
-            </div>
-        </div>
-        <div class="parallax" id="parallax-cta2"
-             style="background-image:url(https://www.solodev.com/assets/anchor/company-hero2.jpg);"></div>
-    </section>
-
-    <!--projects-->
-    <section id="section3">
-        <div class="container my-4">
-
-            <p class="font-weight-bold">Here is a showcase of a few projects I have worked on and links to their GitHub
-                repos.</p>
-
-            <hr class="my-4">
-
-            <!--Carousel Wrapper-->
-            <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-                <!--Controls-->
-                <div class="controls-top text-center">
-                    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i
-                            class="fa fa-chevron-left"></i></a>
-                    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
-                            class="fa fa-chevron-right"></i></a>
-                </div>
-                <!--/.Controls-->
-
-                <!--Indicators-->
-                <ol class="carousel-indicators">
-                    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                    <li data-target="#multi-item-example" data-slide-to="1"></li>
-                    <li data-target="#multi-item-example" data-slide-to="2"></li>
-                </ol>
-                <!--/.Indicators-->
-
-                <!--Slides-->
-                <div class="carousel-inner" role="listbox">
-
-                    <!--First slide-->
-                    <div class="carousel-item active">
-
-                        <div class="row">
-                            <div class="col-md-4 min-h-100">
-                                <div class="card mb-2 caro-card">
-                                    <img class="card-img-top bing"
-                                         src="images/projects/bingMap2.png"
-                                         alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Bing Maps API Project</h4>
-                                        <p class="card-text"> Asynchronous request to Bing Maps API to retrieve
-                                            coordinates of
-                                            dog park locations. <i>Using Javascript, HTML, CSS, Bootstrap</i>
-
-                                        </p>
-                                        <a class="btn btn-primary">Git</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 clearfix d-none d-md-block min-h-100">
-                                <div class="card mb-2 caro-card">
-                                    <img class="card-img-top"
-                                         src="images/projects/fileUpload.png"
-                                         alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Client/Server side Web App</h4>
-                                        <p class="card-text">Multi-page web application implementing client and server
-                                            side
-                                            form input validation, and database integration.<i>Using PHP, HTML, CSS,
-                                                Bootstrap</i></p>
-                                        <a class="btn btn-primary">GIT</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 clearfix d-none d-md-block min-h-100">
-                                <div class="card mb-2 caro-card">
-                                    <img class="card-img-top"
-                                         src="images/projects/lamp3.png"
-                                         alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title">CSV parser</h4>
-                                        <p class="card-text"> Web application allows user to upload a CSV
-                                            file. App will read contents of the file and allow the
-                                            user to view, edit, and delete information as displayed. <i>Using PHP, HTML,
-                                                CSS, Bootstrap</i>
-                                        </p>
-                                        <a class="btn btn-primary">GIT</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!--/.First slide-->
-
-                    <!--Second slide-->
-                    <div class="carousel-item">
-
-                        <div class="row">
-                            <div class="col-md-4 min-h-100">
-                                <div class="card mb-2 caro-card">
-                                    <img class="card-img-top"
-                                         src="images/projects/dice.png"
-                                         alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Roll 'Em Dice Game</h4>
-                                        <p class="card-text">Interactive dice game web application <i>Built using
-                                            Javascript, HTML, Bootstrap, CSS </i>
-                                        </p>
-                                        <a class="btn btn-primary">GIT</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 clearfix d-none d-md-block min-h-100">
-                                <div class="card mb-2 caro-card">
-                                    <img class="card-img-top"
-                                         src="images/projects/movieDB.png"
-                                         alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title">IMDB Movie Vue App</h4>
-                                        <p class="card-text">Display data from IMDB movie database including movie
-                                            titles,
-                                            posters, release dates, and summaries. <i>Built using Vue.js, HTML, SCSS,
-                                                Vuetify, Bootstrap</i></p>
-                                        <a class="btn btn-primary">GIT</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 clearfix d-none d-md-block min-h-100">
-                                <div class="card mb-2 caro-card">
-                                    <img class="card-img-top"
-                                         src="images/projects/masq.png"
-                                         alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Website redesign</h4>
-                                        <p class="card-text">Website redesigned for local hair salon. <i>Built using
-                                            Laravel, HTML, CSS, and Javascript</i></p>
-                                        <a class="btn btn-primary">GIT</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!--/.Second slide-->
-                </div>
-                <!--/.Slides-->
-
-            </div>
-
-        </div>
-    </section>
-
-    <section class="company-heading intro-type" id="parallax-three">
-        <div class="container">
-            <div class="row product-title-info">
-                <div class="col-md-12">
-                    <h1>CONTACT.</h1>
-                    <a class="ct-btn-scroll ct-js-btn-scroll" href="#section4"><img alt="Arrow Down Icon"
-                                                                                    src="https://www.solodev.com/assets/anchor/arrow-down.png"></a>
-                </div>
-            </div>
-        </div>
-        <div class="parallax" id="parallax-cta3"
-             style="background-image:url(https://www.solodev.com/assets/anchor/company-hero2.jpg);"></div>
-    </section>
-
-
-    <section id="section4" class="container d-flex justify-content-center py-4">
-        <div class="card col-md-8 col-12">
-            <div class="card-body">
-                <h2 class="card-title text-center">Can't wait to hear from you!</h2>
-
-                <form id="contact-form" class="form" action="/?email-sent=true" method="POST" data-netlify="true" role="form">
-                    <div class="form-group">
-                        <label class="form-label" for="name"></label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"
-                               tabindex="1" required>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="email"></label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"
-                               tabindex="2" required>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="subject"></label>
-                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject"
-                               tabindex="3">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="message"></label>
-                        <textarea rows="5" cols="50" name="message" class="form-control" id="message"
-                                  placeholder="Message" tabindex="4" required></textarea>
-                    </div>
-                    <input type="text" name="_honey" style="display:none">
-                    <input type="hidden" name="_captcha" value="false">
-                    <div class="text-center">
-                        <button type="submit" class="connect font-weight-bold btn btn-start-order"><i id="send" class="far fa-comment-dots font-weight-bolder"></i></button>
-                    </div>
                 </form>
             </div>
         </div>
-    </section>
-
-
-    <!--footer x-->
-    <footer class="">
-        <div class="container">
-            <div class="row ">
-                <div class="col-md-4 text-center text-md-left ">
-
-                    <div class="py-0">
-                        <h3 class="my-4">Say<span class="mx-2 font-italic text-white ">Hello</span></h3>
-
-                        <p class="footer-links font-weight-bold">
-                            <a class="text-white" href="#section2">About</a>
-                            |
-                            <a class="text-white" href="#section3">Projects</a>
-                            |
-                            <a class="text-white" href="#">Resume</a>
-                            |
-                            <a class="text-white" href="#section4">Contact Me</a>
-                        </p>
-                        <p class=" py-4 mb-4">&copy;2020 Allison Speck Web Services.</p>
+        <!--end of filter buttons -->
+        <!-- store  items-->
+        <div class="row" id="store-items">
+            <!-- single item -->
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item php" data-item="sweets">
+                <div class="card ">
+                    <div class="img-container">
+                        <img src="images/masq.png" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon">
+                <i class="fab fa-github"></i>
+              </span>
                     </div>
-                </div>
+                    <div class="card-body">
+                        <div class="card-text d-flex justify-content-between text-capitalize">
+                            <h5 id="store-item-name">Website Redesign</h5>
+                            <h5 class="store-item-value">$ <strong id="store-item-price"
+                                                                   class="font-weight-bold">5</strong></h5>
 
-                <div class="col-md-4 text-center text-md-left ">
-                    <div class="py-2 my-4">
-                        <div>
-                            <p class=""><i class="fa fa-map-marker mx-2 text-white"></i>
-                                London, ON, Canada</p>
-                        </div>
-
-                        <div>
-                            <p><i class="fa fa-phone  mx-2 text-white"></i>(519) 702-4332</p>
-                        </div>
-                        <div>
-                            <p><i class="fa fa-envelope  mx-2 text-white"></i><a
-                                    href="mailto:allisonmspeck@gmail.com">allisonmspeck@gmail.com</a></p>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-4 my-4 text-center text-md-left ">
-                    <span class=" font-weight-bold text-white">About Me</span>
-                    <p class=" my-2">Does your small business need a face lift? I'm here to help. Highly efficient, and
-                        low
-                        cost. I'm willing to work with you to identify where you see your web presence going, and how I
-                        can
-                        help you get there. </p>
-                    <div class="py-2">
-                        <a href="#"><i class="fab fa-facebook fa-2x text-primary mx-3"></i></a>
-                        <a href="#"><i class="fab fa-google-plus fa-2x text-danger mx-3"></i></a>
-                        <a href="#"><i class="fab fa-twitter fa-2x text-info mx-3"></i></a>
-                        <a href="#"><i class="fab fa-youtube fa-2x text-danger mx-3"></i></a>
+
+                </div>
+                <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item javascript" data-item="cupcakes">
+                <div class="card ">
+                    <div class="img-container">
+                        <img src="images/dice.png" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text d-flex justify-content-between text-capitalize">
+                            <h5 id="store-item-name">Roll 'Em Dice Game</h5>
+                            <h5 class="store-item-value">$ <strong id="store-item-price"
+                                                                   class="font-weight-bold">5</strong></h5>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item vue" data-item="cakes">
+                <div class="card ">
+                    <div class="img-container">
+                        <img src="images/movieDB.png" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text d-flex justify-content-between text-capitalize">
+                            <h5 id="store-item-name">Movie Database</h5>
+                            <h5 class="store-item-value">$ <strong id="store-item-price"
+                                                                   class="font-weight-bold">5</strong></h5>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item vue" data-item="dougnuts">
+                <div class="card ">
+                    <div class="img-container">
+                        <img src="images/alliUI.png" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text d-flex justify-content-between text-capitalize">
+                            <h5 id="store-item-name">alliUI</h5>
+                            <h5 class="store-item-value">$ <strong id="store-item-price"
+                                                                   class="font-weight-bold">5</strong></h5>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item javascript" data-item="sweets">
+                <div class="card ">
+                    <div class="img-container">
+                        <img src="https://via.placeholder.com/328x184?text=Image+Coming+Soon"
+                             class="card-img-top store-img" alt="">
+                        <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text d-flex justify-content-between text-capitalize">
+                            <h5 id="store-item-name">Todo App</h5>
+                            <h5 class="store-item-value">$ <strong id="store-item-price"
+                                                                   class="font-weight-bold">10</strong></h5>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item javascript" data-item="cupcakes">
+                <div class="card ">
+                    <div class="img-container">
+                        <img src="images/bookMArker.png" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text d-flex justify-content-between text-capitalize">
+                            <h5 id="store-item-name">Site Bookmarker App</h5>
+                            <h5 class="store-item-value">$ <strong id="store-item-price"
+                                                                   class="font-weight-bold">10</strong></h5>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item javascript" data-item="cakes">
+                <div class="card ">
+                    <div class="img-container">
+                        <img src="images/BookList%20App.png" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text d-flex justify-content-between text-capitalize">
+                            <h5 id="store-item-name">BookList App</h5>
+                            <h5 class="store-item-value">$ <strong id="store-item-price"
+                                                                   class="font-weight-bold">10</strong></h5>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item php" data-item="dougnuts">
+                <div class="card ">
+                    <div class="img-container">
+                        <img src="images/Pupdate.png" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text d-flex justify-content-between text-capitalize">
+                            <h5 id="store-item-name">PupDate Web App</h5>
+                            <h5 class="store-item-value">$ <strong id="store-item-price"
+                                                                   class="font-weight-bold">10</strong></h5>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item php" data-item="sweets">
+                <div class="card ">
+                    <div class="img-container">
+                        <img src="images/csvParse.png" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text d-flex justify-content-between text-capitalize">
+                            <h5 id="store-item-name">CSV Parser</h5>
+                            <h5 class="store-item-value">$ <strong id="store-item-price"
+                                                                   class="font-weight-bold">15</strong></h5>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+
+        </div>
+    </div>
+</section>
+<!--end of store items -->
+
+<!--contact form begins-->
+<section id="section4" class="container d-flex justify-content-center py-4">
+    <div class="card col-md-8 col-12">
+        <div class="card-body">
+            <h2 class="card-title text-center cursive-title">Can't wait to hear from you!</h2>
+
+            <form id="contact-form" class="form" action="/?email-sent=true" method="POST" data-netlify="true"
+                  role="form">
+                <div class="form-group">
+                    <label class="form-label" for="name"></label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"
+                           tabindex="1" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email"></label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"
+                           tabindex="2" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="subject"></label>
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject"
+                           tabindex="3">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="message"></label>
+                    <textarea rows="5" cols="50" name="message" class="form-control" id="message"
+                              placeholder="Message" tabindex="4" required></textarea>
+                </div>
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+                <div class="text-center">
+                    <button type="submit" class="connect font-weight-bold btn btn-start-order"><i id="send"
+                                                                                                  class="far fa-comment-dots font-weight-bolder"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!--end of contqct form-->
+
+<!--footer x-->
+<footer class="">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-4 text-center text-md-left ">
+
+                <div class="py-0">
+                    <h3 class="my-4 cursive-title">Say<span class="mx-2 font-italic text-white ">Hello</span></h3>
+
+                    <p class="footer-links font-weight-bold">
+                        <a class="text-white" href="#section2">About</a>
+                        |
+                        <a class="text-white" href="#section3">Projects</a>
+                        |
+                        <a class="text-white modalBtn" href="#">Resume</a>
+                        |
+                        <a class="text-white" href="#section4">Contact Me</a>
+                    </p>
+                    <p class=" py-4 mb-4">&copy;2020 Allison Speck Web Services.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 text-center text-md-left ">
+                <div class="py-2 my-4">
+                    <div>
+                        <p class=""><i class="fa fa-map-marker mx-2 text-white"></i>
+                            London, ON, Canada</p>
+                    </div>
+
+                    <div>
+                        <p><i class="fa fa-phone  mx-2 text-white"></i>(519) 702-4332</p>
+                    </div>
+                    <div>
+                        <p><i class="fa fa-envelope  mx-2 text-white"></i><a
+                                href="mailto:allisonmspeck@gmail.com">allisonmspeck@gmail.com</a></p>
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-4 my-4 text-center text-md-left ">
+                <span class=" font-weight-bold text-white">What can I do?</span>
+                <p class=" my-2">Does your small business need a face lift? I'm here to help. Highly efficient, and
+                    low
+                    cost. I'm willing to work with you to identify where you see your web presence going, and how I
+                    can
+                    help you get there. </p>
+                <div class="py-2">
+                    <a href="#"><i class="fab fa-facebook fa-2x text-primary mx-3"></i></a>
+                    <a href="#"><i class="fab fa-google-plus fa-2x text-danger mx-3"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-2x text-info mx-3"></i></a>
+                    <a href="#"><i class="fab fa-youtube fa-2x text-danger mx-3"></i></a>
+                </div>
+            </div>
         </div>
-    </footer>
-    <!--end of footer-->
-
-
-    <!-- jQuery -->
-    <script type="text/javascript" src="MDB-Free_4.11.0/js/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="MDB-Free_4.11.0/js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="MDB-Free_4.11.0/js/bootstrap.min.js"></script>
-
-    <!-- Your custom scripts (optional) -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <!--default js-->
-    <script type="text/javascript" src="app.js"></script>
+    </div>
+</footer>
+<!--end of footer-->
+<!-- jquery -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- bootstrap js -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- script js -->
+<script src="js/app.js"></script>
 </body>
+
 </html>
