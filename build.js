@@ -145,7 +145,6 @@ $(document).ready(function () {
     timer: 3000,
     timerProgressBar: true,
     background: "#090613",
-    customClass: "toasty",
     onOpen: function onOpen(toast) {
       toast.addEventListener('mouseenter', Swal.stopTimer);
       toast.addEventListener('mouseleave', Swal.resumeTimer);
@@ -157,7 +156,7 @@ $(document).ready(function () {
     Toast.fire({
       icon: 'success',
       title: 'Message Sent!',
-      background: "#5d9aff",
+      background: "#a2a4b1",
       fontColor: "white"
     });
   }
