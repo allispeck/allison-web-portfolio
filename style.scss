@@ -1,23 +1,203 @@
-$primary : #9b1390;
-$secondary : #1c645e;
-$white : #ffffff;
+//@import "custom";
+@import "~bootstrap/scss/bootstrap";
 
-.hlb {
-  background-color : $primary;
-  color            : $white;
-  border-radius    : 0.5rem;
-  padding          : 1rem;
-  box-shadow       : 0 8px 15px rgba(0, 0, 0, 0.1);
-  font-size        : 4rem;
-  font-family      : 'Handlee', cursive;
-  cursor           : pointer;
-  transition       : background-color .5s;
+//color scheme
+$primary : #084887;
+$secondary : #E28413;
+$white : #FBF5F3;
 
-  &:hover {
-    transform : translateY(3px);
-    background-color: darken($primary, 5%);
-  }
+$dark-orange : #F9AB55;
+$green : #084887;
+$orange : #F9AB55;
+$light-green : #86BBD8;
+$tan : #D7B49E;
+$light-purple : #b6c3ef;
+$yellowTrans : rgba(249, 228, 148, 0.5);
+$mainYellow : rgb(249, 228, 148);
+
+$dark : #2D2327;
+$dark-purple : #45364B;
+$purple : #62466B;
+
+$light-green : #B5C2B7;
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+:root {
+  --mainPink    : #ef666b;
+  --mainYellow  : rgb(249, 228, 148);
+  --mainWhite   : #fff;
+  --mainBlack   : #000;
+  --yellowTrans : rgba(249, 228, 148, 0.5);
+  --mainGrey    : rgb(238, 238, 238);
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
+body {
+  //font-family: "Kaushan Script", cursive;
+  font-family : 'Open Sans Condensed', serif;
+  background  : var(--mainWhite);
+  color       : var(--mainBlack);
+}
 
+/* nav links */
+.navbar-toggler {
+  outline : none !important;
+}
+
+.toggler-icon {
+  font-size : 2.5rem;
+  color     : var(--mainPink);
+}
+
+.nav-link {
+  color      : var(--mainPink);
+  font-size  : 1.5rem;
+  transition : all 0.5s ease-in-out;
+}
+
+.nav-link:hover {
+  color : var(--mainBlack);
+}
+
+/* end of nav links */
+
+/* banner */
+.max-height {
+  min-height : calc(100vh - 76px);
+  background : linear-gradient($yellowTrans, $yellowTrans), url("./images/bg-stars2.jpg") center/cover fixed no-repeat;
+  position   : relative;
+}
+
+.banner {
+  color      : var(--mainWhite);
+  margin-top : -4rem;
+}
+
+.cursive-title {
+  font-family : "Kaushan Script", cursive;
+
+}
+
+.banner-title {
+  color     : var(--mainPink);
+  font-size : 4rem;
+}
+
+.banner-link {
+  font-size : 1.5rem;
+  color     : var(--mainBlack);
+  border    : 0.2rem solid var(--mainBlack);
+}
+
+.banner-link:hover {
+  background : var(--mainBlack);
+  color      : var(--mainPink);
+}
+
+/* endo of banner */
+
+/* git buttons */
+.btn-pink {
+  color        : var(--mainPink) !important;
+  border-color : var(--mainPink) !important;
+}
+
+.btn-black {
+  color        : var(--mainBlack) !important;
+  border-color : var(--mainBlack) !important;
+}
+
+.btn-black:hover {
+  color      : var(--mainPink) !important;
+  background : var(--mainBlack) !important;
+}
+
+.btn-pink:hover {
+  background : var(--mainPink) !important;
+  color      : var(--mainBlack) !important;
+}
+
+/* end of git buttons */
+
+/* about */
+.about-img__container {
+  position : relative;
+}
+
+.about-img__container::before {
+  content    : "";
+  position   : absolute;
+  top        : -1.5rem;
+  left       : -1.7rem;
+  width      : 100%;
+  height     : 100%;
+  outline    : 0.5rem solid #5c4e70;
+  z-index    : -1;
+  transition : all 1s ease-in-out;
+}
+
+.about-img__container:hover:before {
+  top  : 0;
+  left : 0;
+}
+
+/*end of  about */
+
+/* project card items */
+.store {
+  background : var(--mainGrey);
+}
+
+.img-container {
+  position : relative;
+  overflow : hidden;
+  cursor   : pointer;
+}
+
+.store-img {
+  transition : all 1s ease-in-out;
+}
+
+.img-container:hover .store-img {
+  transform : scale(1.2);
+}
+
+.store-item-icon {
+  position               : absolute;
+  bottom                 : 0;
+  right                  : 0;
+  padding                : 0.75rem;
+  background             : #f486a7;
+  border-top-left-radius : 1rem;
+  transition             : all 1s ease-in-out;
+  transform              : translate(100%, 100%);
+}
+
+.img-container:hover .store-item-icon {
+  transform : translate(0, 0);
+}
+
+.store-item-icon:hover {
+  color : var(--mainWhite);
+}
+
+.store-item-value {
+  color : $mainYellow;
+}
+
+/*end of card items */
+.search-box {
+  background : var(--mainPink);
+  color      : var(--mainBlack);
+}
+
+footer {
+  background-color : #F0AFA4;
+}
+
+.fa-linkedin{
+  color: #0e76a8;
+}
