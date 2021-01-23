@@ -11471,10 +11471,10 @@ body {
 
 #xBxHack:checked ~ nav .menu {
   display: block;
+  z-index: 99999;
 }
 
 .container {
-  max-width: 960px;
   margin: 0 auto;
   padding: 10px;
 }
@@ -11502,6 +11502,7 @@ body {
     box-shadow: none;
     border: none;
     float: right;
+    z-index: 9999;
     /*POSITION*/
     position: static;
   }
