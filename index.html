@@ -24,47 +24,28 @@
 <!-- header -->
 <header>
     <!-- navbar  -->
-
-    <nav class="navbar navbar-expand-lg px-4">
-
-        <!--<a class="navbar-brand" href="#"><img src="images/asLogo.svg" alt=""></a>-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
-            <span class="toggler-icon"><i class="fas fa-bars"></i></span>
-        </button>
-        <div class="d-flex justify-content-center">
-            <div class="text-dark text-xl-center initials">AS.</div>
-            <div class="collapse navbar-collapse" id="myNav">
-                <ul class="navbar-nav text-capitalize">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#about">about</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section4">contact</a>
-                    </li>
-                </ul>
-                <div class="nav-info-items d-none d-lg-flex ">
-                    <!-- single info -->
-                    <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
-                        <span class="info-icon mx-lg-3"><i class="fab fa-linkedin"></i></span>
-                        <a class="mb-0" href="www.linkedin.com/in/allison-speck">/in/allison-speck</a>
-                    </div>
-                    <!-- end of single info -->
-                </div>
-            </div>
+    <input type="checkbox" id="xBxHack" />
+    <!-- Navigation -->
+    <nav id="mainNav" class="mainNav">
+        <div class="container">
+            <div class="logo"><a href="#"><strong>AS.</strong></a></div>
+            <label class="navBars" for="xBxHack">
+                <i class="fa fa-bars"></i>
+            </label>
+            <ul id="menu" class="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-form">Contact</a></li>
+            </ul>
         </div>
     </nav>
+
     <!-- end of nav -->
     <!-- banner  -->
     <div class="container-fluid">
         <div class="row max-height justify-content-center align-items-center">
             <div class="col-10 mx-auto banner text-center">
-                <h1 class="text-capitalize cursive-title banner-title"">Allison Speck</h1>
+                <h1 class="text-capitalize cursive-title banner-title">Allison Speck</h1>
                 <a href="#about" class="btn banner-link text-uppercase my-2">View Resume</a>
 
 
@@ -82,7 +63,8 @@
         <div class="row">
             <div class="col-10 mx-auto col-md-6 my-5">
                 <h1 class="text-capitalize cursive-title">About <strong class="banner-title ">me</strong></h1>
-                <p class="my-4 text-muted w-75">My Name is Allison Speck. I am a web developer from London, ON, and graduate from
+                <p class="my-4 text-muted w-75">My Name is Allison Speck. I am a web developer from London, ON, and
+                    graduate from
                     Fanshawe College. Taking an idea and making it come to
                     life is one of my favourite things to do! There are so many technologies
                     and techniques out there I'm excited to continue learning and gaining exposure to new things. </p>
@@ -107,7 +89,7 @@
 <!-- end of about us -->
 
 
-<!-- store -->
+<!-- projects -->
 <section id="projects" class="store py-5">
     <div class="container">
         <!-- section title -->
@@ -126,7 +108,7 @@
                 <a href="#" class="btn filter-btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
                    data-filter="php">PHP</a>
                 <a href="#" class="btn filter-btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
-                   data-filter="javascript">VANILLA JS</a>
+                   data-filter="javascript">JS</a>
                 <a href="#" class="btn filter-btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
                    data-filter="vue">VUE</a>
             </div>
@@ -148,7 +130,8 @@
             </div>
         </div>
         <!--end of filter buttons -->
-        <!-- store  items-->
+
+        <!-- project  items-->
         <div class="row" id="store-items">
             <!-- single item -->
             <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item php" data-item="sweets">
@@ -156,7 +139,9 @@
                     <div class="img-container">
                         <img src="images/masq.png" class="card-img-top store-img" alt="">
                         <span class="store-item-icon">
-                <i class="fab fa-github"></i>
+                            <a href="http://masqueradesalon.com/" target="_blank">
+                                <i class="fas fa-eye"></i>
+                            </a>
               </span>
                     </div>
                     <div class="card-body">
@@ -169,15 +154,17 @@
                 </div>
                 <!-- end of card-->
             </div>
-            <!--end of single store item-->
+            <!--end of single project item-->
             <!-- single item -->
             <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item javascript" data-item="cupcakes">
                 <div class="card ">
                     <div class="img-container">
                         <img src="images/dice.png" class="card-img-top store-img" alt="">
                         <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
+                            <a href="https://github.com/allispeck/roll_em_dice_game" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
                     </div>
                     <div class="card-body">
                         <div class="card-text d-flex justify-content-between text-capitalize">
@@ -190,15 +177,17 @@
                 </div>
                 <!-- end of card-->
             </div>
-            <!--end of single store item-->
+            <!--end of single project item-->
             <!-- single item -->
             <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item vue" data-item="cakes">
                 <div class="card ">
                     <div class="img-container">
                         <img src="images/movieDB.png" class="card-img-top store-img" alt="">
                         <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
+                            <a href="https://github.com/allispeck/movie-db" target="_blank">
+                            <i class="fab fa-github"></i>
+                            </a>
+                        </span>
                     </div>
                     <div class="card-body">
                         <div class="card-text d-flex justify-content-between text-capitalize">
@@ -212,15 +201,17 @@
                 </div>
                 <!-- end of card-->
             </div>
-            <!--end of single store item-->
+            <!--end of single project item-->
             <!-- single item -->
             <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item vue" data-item="dougnuts">
                 <div class="card ">
                     <div class="img-container">
                         <img src="images/alliUI.png" class="card-img-top store-img" alt="">
                         <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
+                            <a href="https://github.com/allispeck/alli-ui" target="_blank">
+                         <i class="fab fa-github"></i>
+                            </a>
+                        </span>
                     </div>
                     <div class="card-body">
                         <div class="card-text d-flex justify-content-between text-capitalize">
@@ -234,7 +225,31 @@
                 </div>
                 <!-- end of card-->
             </div>
-            <!--end of single store item-->
+            <!--end of single project item-->
+
+            <!-- single item -->
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item php" data-item="dougnuts">
+                <div class="card ">
+                    <div class="img-container">
+                        <img src="images/Pupdate.png" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon">
+                            <i class="fab fa-github"></i>
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text d-flex justify-content-between text-capitalize">
+                            <h5 id="store-item-name">PupDates Web App</h5>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- end of card-->
+            </div>
+            <!--end of single project item-->
+
             <!-- single item -->
             <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item javascript" data-item="sweets">
                 <div class="card ">
@@ -242,12 +257,14 @@
                         <img src="https://via.placeholder.com/328x184?text=Image+Coming+Soon"
                              class="card-img-top store-img" alt="">
                         <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
+                            <a href="https://github.com/allispeck/Quizam" target="_blank">
+                        <i class="fab fa-github"></i>
+                            </a>
+                        </span>
                     </div>
                     <div class="card-body">
                         <div class="card-text d-flex justify-content-between text-capitalize">
-                            <h5 id="store-item-name">Todo App</h5>
+                            <h5 id="store-item-name">Quiz App</h5>
 
                         </div>
                     </div>
@@ -256,98 +273,82 @@
                 </div>
                 <!-- end of card-->
             </div>
-            <!--end of single store item-->
+            <!--end of single project item-->
+
+
             <!-- single item -->
-            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item javascript" data-item="cupcakes">
-                <div class="card ">
-                    <div class="img-container">
-                        <img src="images/bookMArker.png" class="card-img-top store-img" alt="">
-                        <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-text d-flex justify-content-between text-capitalize">
-                            <h5 id="store-item-name">Site Bookmarker App</h5>
+            <!--<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item javascript" data-item="cupcakes">-->
+                <!--<div class="card ">-->
+                    <!--<div class="img-container">-->
+                        <!--<img src="images/bookMArker.png" class="card-img-top store-img" alt="">-->
+                        <!--<span class="store-item-icon">-->
+                            <!--<i class="fab fa-github"></i>-->
+                        <!--</span>-->
+                    <!--</div>-->
+                    <!--<div class="card-body">-->
+                        <!--<div class="card-text d-flex justify-content-between text-capitalize">-->
+                            <!--<h5 id="store-item-name">Site Bookmarker App</h5>-->
 
 
-                        </div>
-                    </div>
+                        <!--</div>-->
+                    <!--</div>-->
 
 
-                </div>
-                <!-- end of card-->
-            </div>
-            <!--end of single store item-->
+                <!--</div>-->
+                <!--&lt;!&ndash; end of card&ndash;&gt;-->
+            <!--</div>-->
+            <!--end of single project item-->
             <!-- single item -->
-            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item javascript" data-item="cakes">
-                <div class="card ">
-                    <div class="img-container">
-                        <img src="images/BookList%20App.png" class="card-img-top store-img" alt="">
-                        <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-text d-flex justify-content-between text-capitalize">
-                            <h5 id="store-item-name">BookList App</h5>
+            <!--<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item javascript" data-item="cakes">-->
+                <!--<div class="card ">-->
+                    <!--<div class="img-container">-->
+                        <!--<img src="images/BookList%20App.png" class="card-img-top store-img" alt="">-->
+                        <!--<span class="store-item-icon">-->
+                             <!--<i class="fab fa-github"></i>-->
+              <!--</span>-->
+                    <!--</div>-->
+                    <!--<div class="card-body">-->
+                        <!--<div class="card-text d-flex justify-content-between text-capitalize">-->
+                            <!--<h5 id="store-item-name">BookList App</h5>-->
 
-                        </div>
-                    </div>
+                        <!--</div>-->
+                    <!--</div>-->
 
 
-                </div>
+                <!--</div>-->
                 <!-- end of card-->
             </div>
-            <!--end of single store item-->
+            <!--end of single project item-->
             <!-- single item -->
-            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item php" data-item="dougnuts">
-                <div class="card ">
-                    <div class="img-container">
-                        <img src="images/Pupdate.png" class="card-img-top store-img" alt="">
-                        <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-text d-flex justify-content-between text-capitalize">
-                            <h5 id="store-item-name">PupDate Web App</h5>
 
-
-                        </div>
-                    </div>
-
-
-                </div>
-                <!-- end of card-->
             </div>
-            <!--end of single store item-->
+            <!--end of single project item-->
             <!-- single item -->
-            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item php" data-item="sweets">
-                <div class="card ">
-                    <div class="img-container">
-                        <img src="images/csvParse.png" class="card-img-top store-img" alt="">
-                        <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-text d-flex justify-content-between text-capitalize">
-                            <h5 id="store-item-name">CSV Parser</h5>
+            <!--<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item php" data-item="sweets">-->
+                <!--<div class="card ">-->
+                    <!--<div class="img-container">-->
+                        <!--<img src="images/csvParse.png" class="card-img-top store-img" alt="">-->
+                        <!--<span class="store-item-icon">-->
+                        <!--<i class="fab fa-github"></i>-->
+                        <!--</span>-->
+                    <!--</div>-->
+                    <!--<div class="card-body">-->
+                        <!--<div class="card-text d-flex justify-content-between text-capitalize">-->
+                            <!--<h5 id="store-item-name">CSV Parser</h5>-->
 
-                        </div>
-                    </div>
+                        <!--</div>-->
+                    <!--</div>-->
 
 
-                </div>
-                <!-- end of card-->
-            </div>
-            <!--end of single store item-->
+                <!--</div>-->
+                <!--&lt;!&ndash; end of card&ndash;&gt;-->
+            <!--</div>-->
+            <!--end of single project item-->
 
         </div>
     </div>
 </section>
-<!--end of store items -->
+<!--end of project items -->
 
 <!--contact form begins-->
 <section id="section4" class="container d-flex justify-content-center py-4">
